@@ -1,27 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<style >
-		a{
-			text-decoration: none;
-			background:  linear-gradient(#3359cc, #cc3399);
+   <style >
+      body{
+         margin:0;
+         
+      }
+      .heading{
+         text-decoration: none;
+         background:  linear-gradient(#D728A7, #53BDCA);
          -webkit-background-clip: text; 
-         -webkit-text-fill-color: transparent;
-			font-size: 30pt;
-         font-family: cursive;
-		}
-	</style>
+         -webkit-text-fill-color:transparent;
+         font-size: 25pt;
+         font-family: Snell Roundhand, cursive;
+         margin-left: 20px;
+         margin-top: 15px; 
+
+      }
+      .links{
+         margin-left: 50px;
+         width:  450px;
+         display: flex;
+      }
+
+
+      header{
+         
+         height:80px;
+         border:dotted 3px #53BDCA;
+
+      }
+      footer{
+         background: #53BDCA; 
+         margin-top: 100%;
+         padding: 0;
+         margin-bottom: 0;
+         text-align: center;
+         height: 80px;
+      }
+      .adress{
+         margin: 1px;
+         font-size: 15pt;
+         font-family: Snell Roundhand, cursive;
+         color: white;
+
+      }
+      .number{
+         margin: 20px;
+         margin-left: 10px;
+         font-size: 20pt;
+         font-family: Snell Roundhand, cursive;
+         color: black;
+      }
+      .macaroons{
+         width: 90px;
+         margin-right: 250px;
+      }
+      .phone{
+         width: 80px;
+         margin-left: 250px;
+      }
+   </style>
 </head>
 <body>
-	<header>
-   <nav class = "header_page">
-   	<a href=""> Контакты</a>
-   	<a href=""> Еда</a>
-   	<a href=""> Плакаты</a>
-   	<a href=""> Стикеры</a>
-   	<a href=""> О группе</a>
-   </nav>
-   </header>
-   	
+<header>
+   <div class="links">
+   <img class="macaroons" src="macaroon.jpg">
+   <a class = "heading"  href=""> Home </a>
+   <a class = "heading" href=""> About </a>
+   <a class = "heading" href=""> Store </a>
+   <img class = "phone" src="phon.jpg">
+   <p class="number">+2224556</p>
+   </div>  
+</header>
+<footer class="first_footer">
+   <br>
+   <p class="adress">Adress: ALmaty city, Brusilov street</p>
+</footer>
 </body>
 </html>
