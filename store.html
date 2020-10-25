@@ -1,81 +1,139 @@
-<!DOCTYPE html>
 <html>
 <head>
-   <style >
-      body{
-         margin:0;
-         
-      }
-      .heading{
-         text-decoration: none;
-         background:  linear-gradient(#D728A7, #53BDCA);
-         -webkit-background-clip: text; 
-         -webkit-text-fill-color:transparent;
-         font-size: 25pt;
-         font-family: Snell Roundhand, cursive;
-         margin-left: 20px;
-         margin-top: 15px; 
+<style>
 
-      }
-      .links{
-         margin-left: 50px;
-         width:  450px;
-         display: flex;
+body{
+  background:#f8efd4;
+  margin:0;
+}
+
+.search input{
+   margin:10px;
+}
+
+.cards{
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  
+}
+.card{
+  margin: 5px;
+  border: dotted;
+  border-width: 7px;
+  border-color:#070d59;
+  border-radius:5px;
+  display: flex;
+  flex-direction: column;   
+}
+.card img{
+   width: 220px;
+   height: 140px;
+}
+.container{
+  margin: 0 auto;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; 
+  
+
+}
+.main_section{
+  margin-top: 0;;
+
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+}
+
+header{
+   height: 70px;
+   background-color: #edc988;
+}
+nav a {
+   text-decoration: none;
+   background:  linear-gradient(#d7385e, #132743);
+   -webkit-background-clip: text; 
+   -webkit-text-fill-color:transparent;
+   font-size: 25pt;
+   font-family: Snell Roundhand, cursive;
+   margin-left: 20px;
+   margin-top: 15px; 
+
+}
+.title{
+  text-decoration: none;
+  text-align: center;
+  color:#6a097d;
+  font-family: Snell Roundhand, cursive;
+  font-size: 14pt;
+}
+footer{
+  margin-top:auto;
+  background: #132743;
+  color:white;
+  height:70px;
+  text-align:center;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+
+  
+}
+.adress{
+   margin: 1px;
+   font-size: 15pt;
+   font-family: Snell Roundhand, cursive;
+   color: #d7385e;
       }
 
-
-      header{
-         width: 1513px;
-         height:80px;
-         border:dotted 3px #53BDCA;
-
-      }
-      footer{
-         background: #53BDCA; 
-         margin-top: 100%;
-         padding: 0;
-         margin-bottom: 0;
-         text-align: center;
-         height: 80px;
-      }
-      .adress{
-         margin: 1px;
-         font-size: 15pt;
-         font-family: Snell Roundhand, cursive;
-         color: white;
-
-      }
-      .number{
-         margin: 20px;
-         margin-left: 10px;
-         font-size: 20pt;
-         font-family: Snell Roundhand, cursive;
-         color: black;
-      }
-      .macaroons{
-         width: 90px;
-         margin-right: 250px;
-      }
-      .phone{
-         width: 80px;
-         margin-left: 250px;
-      }
-   </style>
+.price{
+  font-weight: bold;
+  text-align: center;
+}
+</style>
 </head>
 <body>
+<div class="container">
 <header>
-   <div class="links">
-   <img class="macaroons" src="macaroon.jpg">
-   <a class = "heading"  href=""> Home </a>
-   <a class = "heading" href=""> About </a>
-   <a class = "heading" href=""> Store </a>
-   <img class = "phone" src="phon.jpg">
-   <p class="number">+2224556</p>
-   </div>  
+  <nav>
+    <a href="#" class='active'>Home</a><a href="#">About us</a><a href="#">Comitee</a>
+  </nav>
 </header>
-<footer class="first_footer">
-   <br>
+
+<section class="main_section">
+  <div class="cards">
+    <div class="card">
+      <a href="#" class="title">Angel In Us</a>
+        <img src="angelinus.jpg"/>
+      <div class="description">
+      
+      </div>
+    </div>
+    <div class="cards">
+    <div class="card">
+      <a href="#" class="title">Cafeteria</a>
+        <img src="cafeteria.jpg"/>
+      <div class="description">
+      
+      </div>
+    </div>
+</div>
+<div class="cards">
+    <div class="card">
+      <a href="#" class="title">Bowler Coffee Roasters</a>
+        <img src="bowlercoffee.jpg"/>
+      <div class="description">
+      
+      </div>
+    </div>
+</div>
+
+</section>
+<footer>
    <p class="adress">Adress: ALmaty city, Brusilov street</p>
 </footer>
+</div>
 </body>
 </html>
