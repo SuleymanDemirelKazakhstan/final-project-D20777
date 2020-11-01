@@ -1,0 +1,170 @@
+<html>
+<head>
+<style>
+
+body{
+  background:#f1f1f6;
+  margin:0;
+}
+
+.search input{
+   margin:10px;
+}
+
+.cards{
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+ 
+}
+.card{
+  margin: 20px 5px;
+  border: dotted;
+  border-width: 6px;
+  border-color: #8b1240; 
+  display: flex;
+  flex-direction: column;   
+}
+.card img{
+   width: 270px;
+   height: 150px;
+   border-radius: 7px;
+   margin:0 3px;  
+}
+.container{
+  margin: 0 auto;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; 
+}
+.main_section{
+  margin-top: 0;;
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+}
+
+header{
+   height: 60px;
+   background-color: #e1ccec;
+}
+nav a {
+   text-decoration: none;
+   background:  linear-gradient(#12cad6, #3e206d, #be5683);
+   -webkit-background-clip: text; 
+   -webkit-text-fill-color:transparent;
+   font-size: 20pt;
+   font-family: Snell Roundhand, cursive;
+   margin-left: 30px;
+   margin-top: 8px;
+  
+}
+nav a:hover{
+  border: solid 7px;
+  border-top-color: #848ccf ;
+  border-bottom-color: #b52b65;
+  border-left-color: #900d0d;
+  border-right-color: #8675a9;
+  padding-right: 8px;
+  padding-left: 8px;
+  border-radius: 10px;
+  margin-top: 4px ;
+}
+.title{
+  text-decoration: none;
+  text-align: center;
+  color:#900d0d;
+  font-family: Snell Roundhand, cursive;
+  font-size: 16pt;
+  margin: 5px 0;
+}
+footer{
+  margin-top:auto;
+  background: #3e206d;
+  color:white;
+  height:70px;
+  text-align:center;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+
+}
+.adress{
+   margin: 1px;
+   font-size: 15pt;
+   font-family: Snell Roundhand, cursive;
+   color: white;
+      }
+
+.price{
+  font-weight: bold;
+  text-align: center;
+}
+.description{
+  text-align: center;
+  margin: 5px 0;
+  font-family: Snell Roundhand, cursive;
+  color: #10177a;
+}
+.instagram{
+ text-decoration: none;
+  color:#900d0d;
+  font-family: Snell Roundhand, cursive;
+  font-size: 13pt;
+  margin: 2px 3px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <nav>
+   <a href="forStudy.html" class='active'>Для Учёбы</a><a href="friday.html">Пятницу Вечером</a><a href="#">Вкусно покушать</a><a href="#">Для встреч</a>
+  </nav>
+</header>
+
+<section class="main_section">
+  <div class="cards">
+    <div class="card">
+      <a href="#" class="title">Angel In Us</a>
+      
+        <img src="angelinus.jpg"/>
+        <a class = "instagram" href="https://instagram.com/angelinuscoffee_kz/">instagram</a>
+      <div class="description">
+      Время работы: пн-вс 10:00-22:00 <br>
+      Средний счёт: 1500-3000 тг<br>
+      </div>
+    </div>
+    <div class="cards">
+    <div class="card">
+      <a href="#" class="title">Cafeteria</a>
+        <img src="cafeteria.jpg"/>
+      <a class = "instagram" href="https://www.instagram.com/cafeteria_almaty/">instagram</a>
+      <div class="description">
+        Время работы: пн-вс 10:00–20:00 <br>
+        Средний счёт: 1500-3000 тг<br>
+      
+      </div>
+    </div>
+</div>
+<div class="cards">
+    <div class="card">
+      <a href="#" class="title">Bowler Coffee Roasters</a>
+        <img src="bowlercoffee.jpg"/>
+        <a class = "instagram" href="https://www.instagram.com/bowler_coffeeroasters/">instagram</a>
+      <div class="description">
+        Время работы: пн-вс 08:00–20:00<br>
+        Средний счёт: 700-1500 тг<br>
+      
+      </div>
+    </div>
+</div>
+
+</section>
+<footer>
+   <p class="adress">Adress: Almaty city, Brusilov street</p>
+</footer>
+</div>
+</body>
+</html>
