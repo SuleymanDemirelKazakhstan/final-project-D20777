@@ -1,19 +1,39 @@
 <html>
 <head>
+   <script src="main.js" defer></script>
 <style>
 
 body{
   background:#f1f1f6;
   margin:0;
 }
-
+.card{
+  margin: 20px 5px;
+  border: dotted;
+  border-width: 6px;
+  border-color: #8b1240; 
+  display: flex;
+  flex-direction: column;   
+}
+.cafe{
+   width: 270px;
+   height: 150px;
+   border-radius: 7px;
+   margin:0 3px;  
+}
 .container{
   margin: 0 auto;
   display: flex;
   min-height: 100vh;
   flex-direction: column; 
 }
-
+.main_section{
+  margin-top: 0;
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  background-image: url('back.jpg');
+}
 nav{
   display: flex;
   justify-content: space-around;
@@ -45,6 +65,14 @@ nav a:hover{
   border-radius: 10px;
   margin-top: 4px ;
 }
+.title{
+  text-decoration: none;
+  text-align: center;
+  color:#900d0d;
+  font-family: Snell Roundhand, cursive;
+  font-size: 16pt;
+  margin: 3px;
+}
 footer{
   margin-top:auto;
   background: #3e206d;
@@ -56,19 +84,44 @@ footer{
   justify-content: center;
 
 }
+.adress{
+   margin: 1px;
+   font-size: 15pt;
+   font-family: Snell Roundhand, cursive;
+   color: white;
+      }
+
+
+.description{
+  text-align: center;
+  margin: 5px 0;
+  font-family: Snell Roundhand, cursive;
+  color: #10177a;
+}
+.instagram{
+ text-decoration: none;
+  color:#900d0d;
+  font-family: Snell Roundhand, cursive;
+  font-size: 13pt;
+  margin: 2px 3px;
+}
+
 </style>
 </head>
 <body>
 <div class="container">
 <header>
   <nav>
-    <a href="forStudy.html" class='active'>Для Учёбы</a><a href="#">Пятницу Вечером</a><a href="#">Вкусно покушать</a><a href="#">Для встреч</a>
+    <a class = "mainPage">Главная</a>
+   <a class="active">Для Учёбы</a><a class = "friday" >Пятницу Вечером</a><a class = "eating">Вкусно покушать</a><a class = "meeting">Для встреч</a>
   </nav>
 </header>
 
+<section class = "main_section"> </section>
 <footer>
    <p class="adress">Adress: Almaty city, Brusilov street</p>
 </footer>
+
 </div>
 </body>
 </html>
