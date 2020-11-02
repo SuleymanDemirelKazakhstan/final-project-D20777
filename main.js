@@ -1,3 +1,4 @@
+
 let forStudy = [{title: "Angel In Us", image:"angelinus.jpg", instagram:"https://instagram.com/angelinuscoffee_kz/",description1:"Время работы: пн-вс 10:00-22:00 ", description2:"Средний счёт: 1500-3000 тг"},{title: "Cafeteria", image:"cafeteria.jpg", instagram:"https://www.instagram.com/cafeteria_almaty/",description1:"Время работы: пн-вс 10:00–20:00", description2:"Средний счёт: 1500-3000 тг"},{title: "Bowler Coffee Roasters", image:"bowlercoffee.jpg", instagram:"https://www.instagram.com/bowler_coffeeroasters/",description1:"Время работы: пн-вс 08:00–20:00 ", description2:"Средний счёт: 700-1500 тг"}];
 let click1 = document.querySelector(".active");
 click1.addEventListener('click', fS);
@@ -68,6 +69,16 @@ function fR(){
   description2.classList.add("description");
   div2.appendChild(description2);
 }
-
+}
+let click = document.querySelector(".mainPage");
+click.addEventListener('click',main);
+function main(){
+  let mainSection = document.querySelector(".main_section");
+  mainSection.innerHTML = "";
+  let cafe = document.createElement('img');
+  cafe.src = "cupitor.jpg";
+  cafe.classList.add("cupitor");
+  mainSection.appendChild(cafe);
+  
 }
 
