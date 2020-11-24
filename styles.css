@@ -1,0 +1,78 @@
+*{
+	user-select: none;
+}
+.container{
+	max-width: 1300px;
+	margin: 0 auto;
+}
+header{
+	background-image: url("cupitor.jpg");
+	background-repeat:no-repeat; 
+	background-size: cover;
+	color: white;
+	padding-bottom: 30px;
+}
+
+.up{
+	display: flex;
+	justify-content: space-between;
+	padding-top:15px; 
+	font-size: 12pt;
+}
+
+
+nav{
+	text-transform: uppercase;
+}
+nav a{
+	margin-left: 20px;
+	color: #f9f7cf;
+
+}
+nav a:hover{
+	color: #ffda77 ;
+	border-bottom: dotted 5px #ffda77;
+	border-top: dotted 5px #ffda77;
+	padding-bottom: 3px;
+}
+.centre{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin:0 auto;
+	width: 500px;
+	margin-top: 150px;
+	
+}
+.creative{
+	font-family: 'Texturina', serif;
+	color: #f9f7cf;
+	font-size: 45pt;
+	font-weight: 700;
+	margin-bottom: 200px;
+}
+
+.footer{
+	width: 100%;
+	height: 225px;
+}
+button{
+	background-color:transparent;
+	color: #f9f7cf;
+	border: solid #f9f7cf 2px;
+	text-transform: uppercase;
+	padding: 10px 30px;
+	font-weight: 600;
+}
+button:hover{
+	background-color: #f9f7cf;
+	color:black;
+
+}
+/*.logo{
+	position: absolute;
+	bottom: 0;
+	opacity: 0.7;
+	right:  0;
+}*/

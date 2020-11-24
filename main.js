@@ -1,5 +1,7 @@
 
-let forStudy = [{title: "Angel In Us", image:"angelinus.jpg", instagram:"https://instagram.com/angelinuscoffee_kz/",description1:"Время работы: пн-вс 10:00-22:00 ", description2:"Средний счёт: 1500-3000 тг"},{title: "Cafeteria", image:"cafeteria.jpg", instagram:"https://www.instagram.com/cafeteria_almaty/",description1:"Время работы: пн-вс 10:00–20:00", description2:"Средний счёт: 1500-3000 тг"},{title: "Bowler Coffee Roasters", image:"bowlercoffee.jpg", instagram:"https://www.instagram.com/bowler_coffeeroasters/",description1:"Время работы: пн-вс 08:00–20:00 ", description2:"Средний счёт: 700-1500 тг"}];
+let forStudy = [{title: "Angel In Us", image:"study/angelinus.jpg", instagram:"https://instagram.com/angelinuscoffee_kz/",description1:"Время работы: пн-вс 10:00-22:00 ", description2:"Средний счёт: 1500-3000 тг"},
+{title: "Cafeteria", image:"study/cafeteria.jpg", instagram:"https://www.instagram.com/cafeteria_almaty/",description1:"Время работы: пн-вс 10:00–20:00", description2:"Средний счёт: 1500-3000 тг"},
+{title: "Bowler Coffee Roasters", image:"study/bowlercoffee.jpg", instagram:"https://www.instagram.com/bowler_coffeeroasters/",description1:"Время работы: пн-вс 08:00–20:00 ", description2:"Средний счёт: 700-1500 тг"}];
 let click1 = document.querySelector(".active");
 click1.addEventListener('click', fS);
 function fS(){
@@ -35,7 +37,9 @@ function fS(){
 }
 }
 
-let friday = [{title: "TabakOFF Hookah Bar", image:"hookahLoungeBar.jpg", instagram:"https://www.instagram.com/tabakoff.kz/",description1:"Время работы: пн-вс 15:00–03:00", description2:"Средний счёт: 3000-4500 тг"},{title: "Lugo Bar", image:"lugoBar.jpg", instagram:"https://instagram.com/lugo_almaty/",description1:"Время работы: пн-вс 12:00–03:00", description2:"Средний счёт: 3000-4500 тг"},{title: "Awesome Bar", image:"awesome.jpg", instagram:"https://www.instagram.com/awesome_bar/",description1:"Время работы: пн-вс 07:00–03:00", description2:"Средний счёт: 3000-4500 тг"}];
+let friday = [{title: "TabakOFF Hookah Bar", image:"friday/hookahLoungeBar.jpg", instagram:"https://www.instagram.com/tabakoff.kz/",description1:"Время работы: пн-вс 15:00–03:00", description2:"Средний счёт: 3000-4500 тг"},
+{title: "Lugo Bar", image:"friday/lugoBar.jpg", instagram:"https://instagram.com/lugo_almaty/",description1:"Время работы: пн-вс 12:00–03:00", description2:"Средний счёт: 3000-4500 тг"},
+{title: "Awesome Bar", image:"fridaawesome.jpg", instagram:"https://www.instagram.com/awesome_bar/",description1:"Время работы: пн-вс 07:00–03:00", description2:"Средний счёт: 3000-4500 тг"}];
 let click2 = document.querySelector(".friday");
 click2.addEventListener('click', fR);
 function fR(){
