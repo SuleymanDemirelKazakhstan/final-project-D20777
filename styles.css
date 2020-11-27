@@ -1,3 +1,7 @@
+html{
+	width: 100vw;
+	overflow-x: hidden;
+}
 *{
 	user-select: none;
 }
@@ -8,10 +12,10 @@
 header{
 	background-image: url("images/cupitor.jpg");
 	background-repeat:no-repeat; 
-	background-size: cover;
+	background-size: 100vw auto;
 	color: white;
-	padding-bottom: 30px;
-	height: 720px;
+	padding-bottom: 70px;
+
 }
 
 .up{
@@ -35,7 +39,7 @@ nav a:hover{
 	color: #ffda77 ;
 	border-bottom: dotted 5px #ffda77;
 	border-top: dotted 5px #ffda77;
-	padding-bottom: 3px;
+	/*padding-bottom: 3px;*/
 }
 .centre{
 	display: flex;
@@ -79,7 +83,21 @@ button:hover{
 	width: 150px;
 }
 .information{
-	width: 500px;
+	display: none;
+	width: 600px;
 	height: 500px;
 	margin-left: 100px;
+	border:dotted 5px #ffda77 ;
+}
+.cart{
+
+}
+.sector{
+	max-width: 1300px;
+	margin: 0 auto;
+	display: none;
+
+}
+.second{
+	background:  linear-gradient(#605d21, #3f2817, #1f150e);
 }
