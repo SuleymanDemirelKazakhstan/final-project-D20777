@@ -1,6 +1,7 @@
 html{
 	width: 100vw;
 	overflow-x: hidden;
+	font-family: 'Cormorant Infant', serif;
 }
 *{
 	user-select: none;
@@ -33,6 +34,8 @@ nav{
 nav a{
 	margin-left: 20px;
 	color: #f9f7cf;
+	font-weight: 800;
+	font-size: 13pt;
 
 }
 nav a:hover{
@@ -61,8 +64,9 @@ button{
 	border: dotted #f9f7cf 2px;
 	text-transform: uppercase;
 	padding: 10px 30px;
-	font-weight: 600;
+	font-weight: 800;
 	margin: 10px 10px;
+	font-size: 12pt;
 }
 button:hover{
 	background-color: #ffda77;
@@ -71,7 +75,7 @@ button:hover{
 .categories{
 	display: flex;
     flex-wrap: wrap;
-    width: 600px;
+    width: 50%;
     height: 500px;
 }
 
@@ -90,7 +94,11 @@ button:hover{
 	border:dotted 5px #ffda77 ;
 }
 .cart{
-
+	width: 900px;
+	display: flex;
+	flex-direction: column;
+	border-bottom: 2px solid white;
+	margin-bottom:10px;
 }
 .sector{
 	max-width: 1300px;
@@ -99,5 +107,102 @@ button:hover{
 
 }
 .second{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background:  linear-gradient(#605d21, #3f2817, #1f150e);
+}
+.food{
+	color:#f9f7cf;
+	font-size: 18pt;
+	margin-top: 10px;
+}
+.food::before{
+	content: "Кухня:";
+	margin-right: 20px;
+	font-size: 20pt;
+}
+.name{
+	text-align: center;
+	text-decoration: none;
+	font-size: 26pt;
+	font-weight: 900;
+	color:#f9f7cf;
+	margin-top: 10px;
+}
+.name:hover{
+	color:#ffda77;
+}
+.img{
+	width: 100%;
+}
+.description{
+	font-size: 20pt;
+	color:#f9f7cf;
+	margin:20px 0px;
+	line-height: 30px;
+}
+.adress{
+	color:#f9f7cf;
+	font-size: 18pt;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.adress::before{
+	content:"Адрес:";
+	margin-right: 10px;
+	font-size: 20pt;
+}
+.adress:hover{
+	color: #ffda77;
+}
+.adress:hover::before{
+	color:#f9f7cf;
+}
+.aboutNew{
+	font-size: 24pt;
+	font-weight: 900;
+	text-align: center;
+	margin-bottom: 20px;
+	color:#f9f7cf;
+}
+.aboutNewCafe{
+	font-size: 20pt;
+	font-weight: 600;
+	text-align: center;
+    line-height: 30px;
+    color:#f9f7cf;
+}
+.arrow {
+    margin: 30px;
+}
+.arrow span {
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-bottom: 10px solid #ffda77;
+    border-right: 10px solid #ffda77;
+    transform: rotate(45deg);
+    margin: -20px auto;
+    animation: arrow 3s infinite;
+
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes arrow {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
 }
