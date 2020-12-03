@@ -88,10 +88,11 @@ button:hover{
 }
 .information{
 	display: none;
-	width: 600px;
+	width: calc(50% - 100px);
 	height: 500px;
 	margin-left: 100px;
 	border:dotted 5px #ffda77 ;
+	padding: 15px;
 }
 .cart{
 	width: 900px;
@@ -124,7 +125,6 @@ button:hover{
 }
 .name{
 	text-align: center;
-	text-decoration: none;
 	font-size: 26pt;
 	font-weight: 900;
 	color:#f9f7cf;
@@ -159,6 +159,7 @@ button:hover{
 .adress:hover::before{
 	color:#f9f7cf;
 }
+
 .aboutNew{
 	font-size: 24pt;
 	font-weight: 900;
@@ -178,14 +179,13 @@ button:hover{
 }
 .arrow span {
     display: block;
-    width: 70px;
-    height: 70px;
-    border-bottom: 10px solid #ffda77;
-    border-right: 10px solid #ffda77;
+    width: 60px;
+    height: 60px;
+    border-bottom: 8px solid #ffda77;
+    border-right: 8px solid #ffda77;
     transform: rotate(45deg);
-    margin: -20px auto;
+    margin: -22px auto;
     animation: arrow 3s infinite;
-
 }
 .arrow span:nth-child(2){
     animation-delay: -0.2s;
@@ -203,6 +203,6 @@ button:hover{
     }
     100%{
         opacity: 0;
-        transform: rotate(45deg) translate(20px,20px);
+        transform: rotate(45deg) translate(20px,10px);
     }
 }
