@@ -84,7 +84,15 @@ button:hover{
 	margin-right: 5px; 
 }
 .logo{
-	width: 150px;
+	width: 200px;
+	
+}
+.inf{
+	font-size: 26pt;
+	font-weight: 900;
+	color:#f9f7cf;
+	margin:50px 20px;
+	line-height: 30px;
 }
 .information{
 	display: none;
@@ -135,6 +143,7 @@ button:hover{
 }
 .img{
 	width: 100%;
+	height: 500px;
 }
 .description{
 	font-size: 20pt;
@@ -142,11 +151,11 @@ button:hover{
 	margin:20px 0px;
 	line-height: 30px;
 }
-.adress{
+.adress, .time, .money, .set, .site{
 	color:#f9f7cf;
 	font-size: 18pt;
 	margin-top: 10px;
-	margin-bottom: 20px;
+	
 }
 .adress::before{
 	content:"Адрес:";
@@ -205,4 +214,38 @@ button:hover{
         opacity: 0;
         transform: rotate(45deg) translate(20px,10px);
     }
+}
+
+.time::before{
+	content:"Время:";
+	margin-right: 10px;
+	font-size: 20pt;
+}
+
+.money::before{
+	content:"Средний счёт:";
+	margin-right: 10px;
+	font-size: 20pt;
+}
+.set{
+	margin-bottom: 20px;
+}
+.set::before{
+	content:"Посадочные места:";
+	margin-right: 10px;
+	font-size: 20pt;
+}
+.site{
+	margin-bottom: 20px; 
+}
+.site::before{
+	content:"Сайт:";
+	margin-right: 10px;
+	font-size: 20pt;
+}
+.site:hover{
+    color: #ffda77;
+}
+.site:hover::before{
+	color:#f9f7cf;
 }
