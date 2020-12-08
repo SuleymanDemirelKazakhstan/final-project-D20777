@@ -171,9 +171,9 @@ MongoClient.connect(url,
       sets:"15",
     },
     ];
-    cafe.forEach(el => {
-      dbo.collection("bt3").insert(el);
-    })
+    // cafe.forEach(el => {
+    //   dbo.collection("bt3").insert(el);
+    // })
 
     let pabs = [
       {
@@ -192,7 +192,7 @@ MongoClient.connect(url,
       instagram: "https://www.instagram.com/overpack_lounge_bar/",
       adress_url: "https://yandex.kz/maps/162/almaty/house/Y08Yfg5oQUYDQFppfX5xeHhgYA==/?ll=76.898834%2C43.209434&z=16",
       name: "Overpack",
-      description: "Overpack",
+      description: "Лучшие стейки на Хоспере",
       img_url: "pabs/overack.jpg",
       food: "Европейская",
       adress: "г. Алматы, пр. ​Гагарина, 250 (уг. Ходжанова)",
@@ -217,45 +217,128 @@ MongoClient.connect(url,
     //   dbo.collection("bt4").insert(el);
     // })
 
-    let pfastfood = [
+    let fastfood = [
       {
       instagram: "https://instagram.com/kaz_blackstarburger/",
       adress_url: "https://yandex.kz/maps/162/almaty/house/Y08YfwVlS0EDQFppfX51cX1gZg==/?ll=76.925244%2C43.240132&z=16",
       name: "Black Star Burger",
       description: "#СоччныйМощщный теперь в Казахстане!",
-      img_url: "pabs/jazzbar.jpg",
-      food: "Европейская",
-      adress: "г. Алматы, ул. ​Казыбек би, 65 (пр. Назарбаева)",
-      time: "пн-вс 12:00–00:00", 
-      money:"4500-7000 тг",
-      sets:"350",
+      img_url: "fastfood/blackstar.jpg",
+      food: "Американская",
+      adress: "г. Алматы, ​пр. Абая, 44а (ТЦ Promenade)",
+      time: "пн-вс 10:00–00:00", 
+      site:"blackstarburger.ru",
     },
     {
-      instagram: "https://www.instagram.com/overpack_lounge_bar/",
-      adress_url: "https://yandex.kz/maps/162/almaty/house/Y08Yfg5oQUYDQFppfX5xeHhgYA==/?ll=76.898834%2C43.209434&z=16",
-      name: "Overpack",
-      description: "Overpack",
-      img_url: "pabs/overack.jpg",
-      food: "Европейская",
-      adress: "г. Алматы, пр. ​Гагарина, 250 (уг. Ходжанова)",
+      instagram: "https://instagram.com/6inch.kazakhstan/",
+      adress_url: "https://yandex.kz/maps/?text=43.22784257449859,76.95913749999991",
+      name: "6inch",
+      description: "6inch- это свобода | огромные и безумно вкусные сэндвичи.",
+      img_url: "fastfood/6inch.jpg",
+      food: "Американская",
+      adress: "г. Алматы, Самал 3-й микрорайон, 1 (ТЦ Ритц-Палас)",
+      time: "пн-вс 10:00-21:00",
+      money:"1500-3000 тг",
+      sets:"на вынос",
+    },
+    {
+      instagram: "https://instagram.com/box.lagman/",
+      adress_url: "https://yandex.kz/maps/162/almaty/house/Y08Yfg5mS0UFQFppfX5zdX9nbA==/?ll=76.896202%2C43.224348&z=16",
+      name: "Box Lagman",
+      description: "Мастера Вкусного Лагмана.",
+      img_url: "fastfood/boxlagman.jpeg",
+      food: "Уйгурская, Китайская",
+      adress: "г. Алматы, ул. Гагарина, 139 (выше Тимирзева)",
       time: "пн-вс 11:00–22:00",
-      money:"3000-4500 тг",
-      sets:"70",
+      money:"700-1500 тг",
+      sets:"на вынос",
+    },
+    ];
+    // fastfood.forEach(el => {
+    //   dbo.collection("bt5").insert(el);
+    // })
+
+    let coffeine = [
+      {
+      instagram: "https://www.instagram.com/dali.almaty/",
+      adress_url: "https://yandex.kz/maps/162/almaty/?ll=76.943471%2C43.260035&mode=search&sll=76.943922%2C43.260050&text=43.260050%2C76.943922&z=16",
+      name: "Dali Coffee and Bakery",
+      description: "Огромные стаканы кофе и безумно вкусные сэндвичи.",
+      img_url: "coffeine/daily.jpg",
+      food: "Европейская",
+      adress: " г. Алматы, ул. ​Панфилова, 111 (уг. Гоголя)",
+      time: "пн-вс 08:00–23:00", 
+      money:"1500-3000 тг",
+      sets:"12",
     },
     {
-      instagram: "https://instagram.com/myata_food_ayezova/",
-      adress_url: "https://yandex.kz/maps/162/almaty/house/Y08YfwdjS00HQFppfX5yeHxmYQ==/?ll=76.903280%2C43.239055&z=16",
-      name: "МЯТА FOOD",
-      description: "Myata Food - ТЕРРИТОРИЯ ВКУСА",
-      img_url: "pabs/myata.jpeg",
-      food: "Европейская",
-      adress: "г. Алматы, пр. ​Абая, 76 (уг. Ауэзова)",
-      time: "пн-вс 12:00–23:00",
+      instagram: "https://www.instagram.com/utepia_kz/",
+      adress_url: "https://yandex.kz/maps/162/almaty/house/Y08YfwNlS0QDQFppfX53cX1lYg==/?ll=76.945214%2C43.260166&z=16",
+      name: "Utepia",
+      description: "Utepia, чайный дом.",
+      img_url: "coffeine/utepia.jpg",
+      food: "Нет кухни",
+      adress: "г. Алматы, ул. ​Гоголя, 77 (уг. Панфилова)​",
+      time: "пн-вс 09:00–20:00",
+      money:"700-1500 тг",
+      sets:"на вынос",
+    },
+    {
+      instagram: "https://instagram.com/bestbrew_coffee/",
+      adress_url: "https://yandex.kz/maps/162/almaty/house/Y08YfwZjSEQAQFppfX51dHVrZw==/?ll=76.913117%2C43.245983&z=16",
+      name: "Best Brew Coffee",
+      description: "BB Coffee Almaty. Coffee & Sandwiches. Вкусно. Уютно. Хорошо",
+      img_url: "coffeine/bestbrew.jpg",
+      food: "Американская",
+      adress: "г. Алматы, ул. Жамбыла, 155 к.2 (уг. Байзакова)",
+      time: "пн-вс 08:00–22:00",
+      money:"1500-3000 тг",
+      sets:"12",
+    },
+    ];
+    // coffeine.forEach(el => {
+    //   dbo.collection("bt6").insert(el);
+    // })
+
+    let center = [
+      {
+      instagram: "https://www.instagram.com/barbossa.almaty/",
+      adress_url: "https://yandex.kz/maps/162/almaty/?ll=76.946256%2C43.308887&mode=search&sll=76.946213%2C43.308935&text=43.308935%2C76.946213&z=16",
+      name: "barbossa",
+      description: "Летняя Терраса и Бассейн BarBOSSA.",
+      img_url: "center/barbossa.jpg",
+      food: "Нет кухни",
+      adress: "г. Алматы, ул. ​Акан Серы, 156",
+      time: "пн-вс 10:00–21:00", 
       money:"3000-4500 тг",
       sets:"50",
     },
+    {
+      instagram: "https://www.instagram.com/lemon_studio_almaty/",
+      adress_url: "https://yandex.kz/maps/162/almaty/house/Y08YfwRlSUADQFppfX51cnlqZw==/?ll=76.935054%2C43.243593&z=16",
+      name: "Lemon, кулинарная студия",
+      description: "Кулинарные курсы и мастер-классы.Гастро ужины.Мастер-классы для детей.Кулинарные тимбилдинги",
+      img_url: "center/lemon.jpg",
+      food: "Нет кухни",
+      adress: "г. Алматы, ул. Курмангазы, 90 (уг. Сейфуллина)",
+      time: "пн выходной; вт-вс 10:00–23:00",
+      money:"3000-4500 тг",
+      sets:"50",
+    },
+    {
+      instagram: "https://instagram.com/aspanpark_kz/",
+      adress_url: "https://yandex.kz/maps/162/almaty/?ll=76.935404%2C43.233781&mode=search&sll=76.935990%2C43.234101&text=43.234101%2C76.935990&z=16",
+      name: "Aspan Park",
+      description: "🤸🏻‍♂️ Батуты 🧗🏻 Скалодром 🏎 Автодром 🎠 Аттракционы 👶🏻Детский городок 🤹🏻 Аниматоры 🎉 Party-Rooms для праздников",
+      img_url: "center/aspanpark.jpg",
+      food: "Европейская",
+      adress: "г. Алматы, пр. Сейфуллина, 617 (ТРЦ Forum, 5 этаж)",
+      time: "пн-вс 10:00–22:00",
+      money:"3000-4500 тг",
+      sets:"40",
+    },
     ];
-    pabs.forEach(el => {
-      dbo.collection("bt4").insert(el);
-    })
+    // center.forEach(el => {
+    //   dbo.collection("bt7").insert(el);
+    // })
   });

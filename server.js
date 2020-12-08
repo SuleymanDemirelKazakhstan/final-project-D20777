@@ -37,6 +37,15 @@ app.get('/cafe/:name', function (req, res) {
 app.get('/pabs/:name', function (req, res) {
     res.sendFile(path.join(__dirname, 'pabs/' + req.params['name']));
 });
+app.get('/fastfood/:name', function (req, res) {
+    res.sendFile(path.join(__dirname, 'fastfood/' + req.params['name']));
+});
+app.get('/coffeine/:name', function (req, res) {
+    res.sendFile(path.join(__dirname, 'coffeine/' + req.params['name']));
+});
+app.get('/center/:name', function (req, res) {
+    res.sendFile(path.join(__dirname, 'center/' + req.params['name']));
+});
 app.get('/info/:name', function (req, res) {
     MongoClient.connect(url,
         {

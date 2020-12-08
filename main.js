@@ -181,12 +181,12 @@ function f4(delivering) {
     else{
       let money = document.createElement("p");
       money.classList.add("money");
-      money.textContent = newCafe[i].money;
+      money.textContent = delivering[i].money;
       cart.appendChild(money);
   
       let set = document.createElement("p");
       set.classList.add("set");
-      set.textContent = newCafe[i].sets;
+      set.textContent = delivering[i].sets;
       cart.appendChild(set);
     }
 
