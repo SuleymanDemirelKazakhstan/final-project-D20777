@@ -130,7 +130,132 @@ MongoClient.connect(url,
       sets:"50",
     },
     ];
-    restorans.forEach(el => {
-      dbo.collection("bt2").insert(el);
+    // restorans.forEach(el => {
+    //   dbo.collection("bt2").insert(el);
+    // })
+    let cafe = [
+      {
+      instagram: "https://instagram.com/teplo_na_mira/",
+      adress_url: "https://yandex.kz/maps/?text=43.24902307452835,76.93987749999994",
+      name: "Teplo",
+      description: "Teplo – это сочетание различных блюд и напитков, которые обязательно придутся вам по вкусу.",
+      img_url: "cafe/teplo.jpg",
+      food: "Европейская",
+      adress: "г. Алматы, ​ул. Кабанбай батыра, 122 (уг. Желтоксан)",
+      time: "пн-вс 09:00–00:00", 
+      money:"3000-4500 тг",
+      sets:"50",
+    },
+    {
+      instagram: "https://instagram.com/asianbbq/",
+      adress_url: "https://yandex.kz/maps/162/almaty/?ll=76.889015%2C43.236553&mode=search&sll=76.888997%2C43.236611&text=43.236611%2C76.888997&z=16",
+      name: "ASIAN BarBeQue",
+      description: "Уютный ресторанчик «Asian BarBeQue» предлагает такую услугу, как круглосуточная доставка еды в городе Алматы.Ваши домочадцы и гости по достоинству оценят стремление угостить их вкусной изысканной пищей. Тем более что в «Asian BBQ» готовят только из самых свежих продуктов и здесь всегда огромный выбор различных блюд, а лучшие повара Алматы удовлетворяют запросы самых требовательных гурманов. В ассортименте блюда из корейской и японской кухни, супы, салаты, мясные сеты, вторые блюда, мясо барбекю, гарниры, кукси, роллы, суши, лёгкие закуски, десерты и напитки. Богатый выбор в «Asian BarBeQue» исключает однообразную скучную еду, и вы можете радовать себя и своих гостей необычными оригинальными блюдами каждый день. Посетите наш  ресторан Азиатской кухни —  Asianbbq, в любое время. Мы готовим и принимаем заказы на доставку еды  для наших гостей — круглосуточно.",
+      img_url: "cafe/asianbbq.jpg",
+      food: "Корейская, Паназиатская, Японская, Гриль меню",
+      adress: "г.Алматы, ул. Мынбаева, 117 (уг. Абая)",
+      time: "круглосуточно",
+      money:"1500-3000 тг",
+      sets:"70",
+    },
+    {
+      instagram: "https://www.instagram.com/pizzaleoncafe/",
+      adress_url: "https://yandex.kz/maps/162/almaty/house/Y08Yfg5gT00BQFppfX5ydHtgbA==/?ll=76.890686%2C43.235738&z=16",
+      name: "Leon",
+      description: "С Любовью в каждом ингредиенте.",
+      img_url: "cafe/leon.jpg",
+      food: "Итальянская",
+      adress: "г. Алматы, ул. ​Розыбакиева, 136/1 (ниже Сатпаева)",
+      time: "круглосуточно, без выходных",
+      money:"1500-3000 тг",
+      sets:"15",
+    },
+    ];
+    cafe.forEach(el => {
+      dbo.collection("bt3").insert(el);
+    })
+
+    let pabs = [
+      {
+      instagram: "https://www.instagram.com/z.bar.almaty/",
+      adress_url: "https://yandex.kz/maps/162/almaty/house/Y08YfwNlQUIPQFppfX50d3VjbQ==/?ll=76.945878%2C43.256910&z=16",
+      name: "Z Live & jazz bar",
+      description: "Live music every Friday and Saturday.",
+      img_url: "pabs/jazzbar.jpg",
+      food: "Европейская",
+      adress: "г. Алматы, ул. ​Казыбек би, 65 (пр. Назарбаева)",
+      time: "пн-вс 12:00–00:00", 
+      money:"4500-7000 тг",
+      sets:"350",
+    },
+    {
+      instagram: "https://www.instagram.com/overpack_lounge_bar/",
+      adress_url: "https://yandex.kz/maps/162/almaty/house/Y08Yfg5oQUYDQFppfX5xeHhgYA==/?ll=76.898834%2C43.209434&z=16",
+      name: "Overpack",
+      description: "Overpack",
+      img_url: "pabs/overack.jpg",
+      food: "Европейская",
+      adress: "г. Алматы, пр. ​Гагарина, 250 (уг. Ходжанова)",
+      time: "пн-вс 11:00–22:00",
+      money:"3000-4500 тг",
+      sets:"70",
+    },
+    {
+      instagram: "https://instagram.com/myata_food_ayezova/",
+      adress_url: "https://yandex.kz/maps/162/almaty/house/Y08YfwdjS00HQFppfX5yeHxmYQ==/?ll=76.903280%2C43.239055&z=16",
+      name: "МЯТА FOOD",
+      description: "Myata Food - ТЕРРИТОРИЯ ВКУСА",
+      img_url: "pabs/myata.jpeg",
+      food: "Европейская",
+      adress: "г. Алматы, пр. ​Абая, 76 (уг. Ауэзова)",
+      time: "пн-вс 12:00–23:00",
+      money:"3000-4500 тг",
+      sets:"50",
+    },
+    ];
+    // pabs.forEach(el => {
+    //   dbo.collection("bt4").insert(el);
+    // })
+
+    let pfastfood = [
+      {
+      instagram: "https://instagram.com/kaz_blackstarburger/",
+      adress_url: "https://yandex.kz/maps/162/almaty/house/Y08YfwVlS0EDQFppfX51cX1gZg==/?ll=76.925244%2C43.240132&z=16",
+      name: "Black Star Burger",
+      description: "#СоччныйМощщный теперь в Казахстане!",
+      img_url: "pabs/jazzbar.jpg",
+      food: "Европейская",
+      adress: "г. Алматы, ул. ​Казыбек би, 65 (пр. Назарбаева)",
+      time: "пн-вс 12:00–00:00", 
+      money:"4500-7000 тг",
+      sets:"350",
+    },
+    {
+      instagram: "https://www.instagram.com/overpack_lounge_bar/",
+      adress_url: "https://yandex.kz/maps/162/almaty/house/Y08Yfg5oQUYDQFppfX5xeHhgYA==/?ll=76.898834%2C43.209434&z=16",
+      name: "Overpack",
+      description: "Overpack",
+      img_url: "pabs/overack.jpg",
+      food: "Европейская",
+      adress: "г. Алматы, пр. ​Гагарина, 250 (уг. Ходжанова)",
+      time: "пн-вс 11:00–22:00",
+      money:"3000-4500 тг",
+      sets:"70",
+    },
+    {
+      instagram: "https://instagram.com/myata_food_ayezova/",
+      adress_url: "https://yandex.kz/maps/162/almaty/house/Y08YfwdjS00HQFppfX5yeHxmYQ==/?ll=76.903280%2C43.239055&z=16",
+      name: "МЯТА FOOD",
+      description: "Myata Food - ТЕРРИТОРИЯ ВКУСА",
+      img_url: "pabs/myata.jpeg",
+      food: "Европейская",
+      adress: "г. Алматы, пр. ​Абая, 76 (уг. Ауэзова)",
+      time: "пн-вс 12:00–23:00",
+      money:"3000-4500 тг",
+      sets:"50",
+    },
+    ];
+    pabs.forEach(el => {
+      dbo.collection("bt4").insert(el);
     })
   });

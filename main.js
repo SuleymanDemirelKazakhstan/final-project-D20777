@@ -6,7 +6,7 @@ function f1() {
   information.style.display = "block";
   sector.style.display = "none";
   let inf = document.createElement("p");
-  inf.textContent = "Добро пожаловать в Caffe Cupitor. Здесь вы можете найти информацию о разных заведениях, которые находятся в городе Алматы. ";
+  inf.textContent = "Добро пожаловать в Caffe Cupitor. Здесь вы можете найти информацию о различных заведениях, которые находятся в городе Алматы. Все новые, а также популярные заведения разных категории можете увидеть только здесь. ";
   inf.classList.add("inf");
   information.appendChild(inf);
   let logo = document.createElement("img");
@@ -191,4 +191,24 @@ function f4(delivering) {
     }
 
   }
+}
+let contacts = document.querySelector(".contact");
+contacts.addEventListener('click', contact);
+
+function contact(){
+  sector.innerHTML = "";
+  information.innerHTML = "";
+  information.style.display = "block";
+  sector.style.display = "none";
+  
+  let text = document.createElement("p");
+  text.innerHTML =  "Вы знаете хорошие заведения в городе Алматы? Тогда вы можете поделиться с информацией с нами, написав нам на почту. Или позвонив нам по данному номеру"+ "<br>" + "Контактный номер: +7 756 365 70 21" + "<br>" + "Mail: cupitor@gmail.com";
+  text.classList.add("inf");
+  information.appendChild(text);
+  let logo = document.createElement("img");
+  logo.src = "images/logo.png";
+  logo.classList.add('logo');
+  information.appendChild(logo);
+  
+
 }

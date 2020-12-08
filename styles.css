@@ -16,7 +16,7 @@ header{
 	background-size: 100vw auto;
 	color: white;
 	padding-bottom: 70px;
-
+	
 }
 
 .up{
@@ -87,13 +87,7 @@ button:hover{
 	width: 200px;
 	
 }
-.inf{
-	font-size: 26pt;
-	font-weight: 900;
-	color:#f9f7cf;
-	margin:50px 20px;
-	line-height: 30px;
-}
+
 .information{
 	display: none;
 	width: calc(50% - 100px);
@@ -176,12 +170,15 @@ button:hover{
 	margin-bottom: 20px;
 	color:#f9f7cf;
 }
-.aboutNewCafe{
-	font-size: 20pt;
+.aboutNewCafe, .inf{
+	font-size: 22pt;
 	font-weight: 600;
 	text-align: center;
     line-height: 30px;
     color:#f9f7cf;
+}
+.inf{
+	margin-top: 50px;
 }
 .arrow {
     margin: 30px;
@@ -248,4 +245,193 @@ button:hover{
 }
 .site:hover::before{
 	color:#f9f7cf;
+}
+
+@media screen and (max-width:800px){
+	.container{
+		max-width: 700px;
+	}
+	header{
+		background-size: auto 100%;
+		height: 100%;
+	}
+	.creative{
+		font-size: 30pt;	
+	}
+	nav a{
+		font-size: 12pt;
+		margin-left:8px ;
+	}
+	button{
+		padding: 10px 10px;
+		font-size: 10pt;
+		height: 40pt;
+		margin: 8px;
+	}
+	.icons{
+		width: 25px;
+	}
+	.centre{
+		margin-top: 30px;
+		height: 600px;
+	}
+	.categories{
+		width: 420px;
+		height: 550px;
+	}
+	.information{
+		margin-top: 10px;
+		height: 550px;
+		margin-left: 20px;
+		width: 300px;
+		padding: 10px;
+	}
+	.inf{
+		margin-top: 20px;
+	}
+	.aboutNewCafe, .inf {
+		font-size: 16pt;
+		line-height: 30px;
+	}
+	.logo{
+		width: 150px;
+	}
+	.aboutNew{
+		font-size: 18pt;
+		margin-bottom: 20px;
+	}
+	.aboutNewCafe{
+		font-size: 15pt;
+		line-height: 25px;
+	}
+	.arrow span{
+		width: 50px;
+		height: 50px;
+		margin-bottom: 5px;
+		border-width:6px;
+	}
+	.arrow{
+		margin-top: 30px;
+	}
+	.sector{
+		max-width:700px;
+	}
+	.cart{
+		width: 600px;
+	}
+	.description{
+		
+		font-size: 15pt;
+		line-height: 20px;
+		margin: 12px 0;
+	}
+	.img{
+		height: 300px;
+	}
+	.food, .adress, .time, .site, .set, .money{
+		font-size: 14pt;
+		margin-top: 7px;
+	}
+	.food::before, .adress::before, .time::before, .site::before, .set::before, .money::before{
+		font-size: 14pt;
+	}
+	@media screen and (max-width:400px){
+		.container{
+			max-width: 330px;
+		}
+		header{
+			background-size: auto 100%;
+			height: 100%;
+		}
+		.creative{
+			font-size: 16pt;	
+		}
+		nav a{
+			font-size: 6pt;
+			margin-left:4px ;
+		}
+		button{
+			padding: 5px 5px;
+			font-size: 5pt;
+			height: 20pt;
+			margin: 3px;
+		}
+		.icons{
+			width: 12px;
+		}
+		.centre{
+			margin-top: 15px;
+			height: 400px;
+		}
+		.categories{
+			width: 190px;
+			height: 400px;
+		}
+		.up{
+			height: 100px;
+		}
+		.information{
+			margin-top: 5px;
+			height: 400px;
+			margin-left: 10px;
+			width: 120px;
+			padding: 5px;
+		}
+		
+		.aboutNewCafe, .inf {
+			font-size: 8pt;
+			line-height: 15px;
+		}
+		.inf{
+			margin-top: 10px;
+			line-height: 20px;
+		}
+		.logo{
+			width: 75px;
+		}
+		.aboutNew{
+			font-size: 9pt;
+			margin-bottom: 10px;
+		}
+		.aboutNewCafe{
+			font-size: 8pt;
+		}
+		.arrow span{
+			width: 25px;
+			height: 25px;
+			margin-bottom: 10px;
+			border-width:3px;
+		}
+		.arrow{
+			margin-top: 50px;
+		}
+		.sector{
+			max-width:350px;
+		}
+		.cart{
+			width: 270px;
+			margin-bottom: 5px;
+		}
+		.name{
+			font-size: 18pt;
+			margin-top: 5px;
+		}
+		.description{
+			font-size: 10pt;
+			line-height: 10px;
+			margin: 6px 0;
+		}
+		.img{
+			height: 150px;
+		}
+		.food, .adress, .time, .site, .set, .money{
+			font-size: 7pt;
+			margin-top: 4px;
+		}
+		.food::before, .adress::before, .time::before, .site::before, .set::before, .money::before{
+			font-size: 7pt;
+		}
+		.set, .site{
+			margin-bottom: 10px;
+		}
 }
