@@ -124,27 +124,62 @@ function getData(event){
   
 fetch("http://localhost:3000/info/" + event.target.id).then(res => {
   res.json().then(data => {
-    f4(data);
+
+    // console.log(event.target.id);
+    f4(data,event.target.id);
+    
   })
   })
 }
 
-function f4(delivering) {
+function f4(delivering,idType) {
   sector.innerHTML = "";
   information.innerHTML = "";
-  information.style.display = "none";
+  information.style.display = "block";
   sector.style.display = "block";
+
+  let price = document.createElement('div');
+  price.classList.add("price");
+  information.appendChild(price);
+  let b1 = document.createElement('button');
+  b1.textContent = "700-1500 тг";
+  b1.classList.add("filt");
+  price.appendChild(b1);
+  let b2 = document.createElement('button');
+  b2.textContent = "1500-3000 тг";
+  b2.classList.add("filt");
+  price.appendChild(b2);
+  let b3 = document.createElement('button');
+  b3.textContent = "3000-4500 тг";
+  b3.classList.add("filt");
+  price.appendChild(b3);
+  let b4 = document.createElement('button');
+  b4.textContent = "4500-7000 тг";
+  b4.classList.add("filt");
+  price.appendChild(b4);
+  let b5 = document.createElement('button');
+  b5.textContent = "7000-10000 тг";
+  b5.classList.add("filt");
+  price.appendChild(b5);
+  let filte = document.querySelectorAll(".filt");
+  for (var i = 0; i < filte.length; i++) {
+    filte[i].addEventListener('click', filtering);
+  }
+
   for (let i = 0; i < delivering.length; i++) {
     let cart = document.createElement("div");
     cart.classList.add("cart");
     sector.appendChild(cart);
     cart.id = id++;
 
+
     let name = document.createElement("a");
+
     name.textContent = delivering[i].name;
-    name.href = delivering[i].instagram;
+    name.href = "elementPage.html?id="+idType+"&name=" + name.textContent;
     name.classList.add("name");
     cart.appendChild(name);
+
 
     let description = document.createElement("p");
     description.textContent = delivering[i].description;
@@ -189,9 +224,24 @@ function f4(delivering) {
       set.textContent = delivering[i].sets;
       cart.appendChild(set);
     }
+    }
 
   }
+
+function filtering(event){
+  const arr = document.querySelectorAll(".cart");
+  for (var i = 0; i < arr.length; i++) {
+    const cost = arr[i].querySelector(".money");
+    if(!cost || cost.textContent === event.currentTarget.innerHTML ){
+      arr[i].style.display = "flex";
+    }
+    else{
+      arr[i].style.display = "none";
+    }
+  }
 }
+
+
 let contacts = document.querySelector(".contact");
 contacts.addEventListener('click', contact);
 
@@ -200,7 +250,6 @@ function contact(){
   information.innerHTML = "";
   information.style.display = "block";
   sector.style.display = "none";
-  
   let text = document.createElement("p");
   text.innerHTML =  "Вы знаете хорошие заведения в городе Алматы? Тогда вы можете поделиться с информацией с нами, написав нам на почту. Или позвонив нам по данному номеру"+ "<br>" + "Контактный номер: +7 756 365 70 21" + "<br>" + "Mail: cupitor@gmail.com";
   text.classList.add("inf");
@@ -209,6 +258,4 @@ function contact(){
   logo.src = "images/logo.png";
   logo.classList.add('logo');
   information.appendChild(logo);
-  
-
 }

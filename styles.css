@@ -16,7 +16,9 @@ header{
 	background-size: 100vw auto;
 	color: white;
 	padding-bottom: 70px;
-	
+}
+button{
+	border-radius: 15px;
 }
 
 .up{
