@@ -61,6 +61,9 @@ app.get('/karaoke/:name', function (req, res) {
 app.get('/pizza/:name', function (req, res) {
     res.sendFile(path.join(__dirname, 'pizza/' + req.params['name']));
 });
+app.get('/coffeine/:name', function (req, res) {
+    res.sendFile(path.join(__dirname, 'coffeine/' + req.params['name']));
+});
 app.get('/stolov/:name', function (req, res) {
     res.sendFile(path.join(__dirname, 'stolov/' + req.params['name']));
 });

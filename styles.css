@@ -248,6 +248,40 @@ button:hover{
 .site:hover::before{
 	color:#f9f7cf;
 }
+.filt{
+	font-size: 18pt;
+}
+.price{
+	display: flex;
+	flex-wrap: wrap;
+}
+.deleting{
+	width: 160px;
+	border:2px solid #f9f7cf ;
+	font-weight: 600;
+	padding: 10px 30px;
+	border-radius: 8px;
+	text-align: center;
+	font-size: 14pt;
+	margin-bottom: 20px;
+	background-color: #f9f7cf;
+}
+.deleting:hover{
+	background-color:#ffda77;
+}
+.add{
+	border:2px solid #f9f7cf ;
+	font-weight: 600;
+	padding: 10px 30px;
+	border-radius: 8px;
+	text-align: center;
+	font-size: 18pt;
+	margin-bottom: 20px;
+	background-color: #f9f7cf;
+}
+.add:hover{
+	background-color:#ffda77;
+}
 
 @media screen and (max-width:800px){
 	.container{

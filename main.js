@@ -46,7 +46,7 @@ function f3() {
   sector.style.display = "block";
   let aboutNew = document.createElement("p");
   aboutNew.classList.add("aboutNew");
-  aboutNew.textContent = "6 новых ресторанов и кафе в Алматы, лето-осень 2020";
+  aboutNew.textContent = newCafe.length +" новых ресторанов и кафе в Алматы, лето-осень 2020";
   information.appendChild(aboutNew);
 
   let aboutNewCafe = document.createElement("p");
@@ -111,10 +111,17 @@ function f3() {
     set.classList.add("set");
     set.textContent = newCafe[i].sets;
     cart.appendChild(set);
+     let deleting = document.createElement("p");
+    deleting.textContent = "Удалить";
+    cart.appendChild(deleting);
+    deleting.classList.add("deleting");
+    deleting.addEventListener('click', del);
+    deleting.id = idforDel++;
+    
   }
 }
 
-
+let idforDel = 0;
 let buttons = document.querySelectorAll(".foods");
 for (var i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener('click', getData);
@@ -224,9 +231,28 @@ function f4(delivering,idType) {
       set.textContent = delivering[i].sets;
       cart.appendChild(set);
     }
+    let deleting = document.createElement("p");
+    deleting.textContent = "Удалить";
+    cart.appendChild(deleting);
+    deleting.classList.add("deleting");
+    deleting.addEventListener('click', del);
+    deleting.id = idforDel++;
     }
+    let add = document.createElement("p");
+    add.textContent = "Добавить";
+    sector.appendChild(add);
+    add.classList.add("add");
 
   }
+function del(event){
+  let x = event.currentTarget.id;
+  console.log(event.currentTarget.id);
+  let carta = document.querySelector(".cart");
+  if(carta.id === x){
+    carta.remove();
+  }
+}
+
 
 function filtering(event){
   const arr = document.querySelectorAll(".cart");
