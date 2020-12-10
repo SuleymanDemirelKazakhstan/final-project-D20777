@@ -6,25 +6,29 @@
     border-bottom: 60px solid transparent;
     border-right: 60px solid #ffda77;
 }
+
 .cart{
 	width: 500px;
+	border: 0px;
 }
 .information{
 	padding: 0;
 }
 .name{
-	margin: 0;
+	margin-bottom: 10px ;
 }
 .description{
-	margin: 0;
+	margin-bottom: 10px ;
 }
 .img{
-	width: 400px;
+	width: 500px;
 	height: 300px;
 }
-header{
-	height: 100vh;
+
+.cart{
+	margin-left: 70px;
 }
+
 @media screen and (max-width: 400px){
 	.triangle-left {
     border-top: 25px solid transparent;

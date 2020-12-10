@@ -13,18 +13,20 @@ const name= urlParams.get('name')
 console.log(name);
 fetch("http://localhost:3000/info/" + id + "/" + name).then(res => {
   res.json().then(data => {
-    f4(data);
+    f4(data[0]);
   })
 })
 
   let information = document.querySelector(".information");
+  let cat = document.querySelector(".categories");
 function f4(delivering) {
+
   information.innerHTML = "";
   information.style.border="none";
   information.style.display = "block";
     let cart = document.createElement("div");
     cart.classList.add("cart");
-    information.appendChild(cart);
+    cat.appendChild(cart);
     let name = document.createElement("a");
 
     name.textContent = delivering.name;
@@ -42,38 +44,41 @@ function f4(delivering) {
     img.src = delivering.img_url;
     cart.appendChild(img);
 
+    let secondCart = document.createElement("div");
+    information.appendChild(secondCart);
+
     let food = document.createElement("p");
     food.classList.add("food");
     food.textContent = delivering.food;
-    cart.appendChild(food);
+    secondCart.appendChild(food);
 
     let adress = document.createElement("a");
     adress.classList.add("adress");
     adress.textContent = delivering.adress;
     adress.href = delivering.adress_url;
-    cart.appendChild(adress);
+    secondCart.appendChild(adress);
 
     let time = document.createElement("p");
     time.classList.add("time");
     time.textContent = delivering.time;
-    cart.appendChild(time);
+    secondCart.appendChild(time);
     if(delivering.site){
     let site = document.createElement("a");
     site.textContent = delivering.site;
     site.href = "http://"+delivering.site + "/";
     site.classList.add("site");
-    cart.appendChild(site);
+    secondCart.appendChild(site);
     }
     else{
       let money = document.createElement("p");
       money.classList.add("money");
       money.textContent = delivering.money;
-      cart.appendChild(money);
+      secondCart.appendChild(money);
   
       let set = document.createElement("p");
       set.classList.add("set");
       set.textContent = delivering.sets;
-      cart.appendChild(set);
+      secondCart.appendChild(set);
     }
     }
 
