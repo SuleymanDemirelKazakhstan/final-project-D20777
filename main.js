@@ -238,12 +238,12 @@ function f4(delivering,idType) {
     deleting.addEventListener('click', del);
     deleting.id = idforDel++;
     }
-    let add = document.createElement("p");
-    add.textContent = "Добавить";
-    sector.appendChild(add);
-    add.classList.add("add");
-
+    // let add = document.createElement("p");
+    // add.textContent = "Добавить";
+    // sector.appendChild(add);
+    // add.classList.add("add");
   }
+  
 function del(event){
   let x = event.currentTarget.id;
   console.log(event.currentTarget.id);
@@ -255,6 +255,7 @@ function del(event){
 
 
 function filtering(event){
+
   const arr = document.querySelectorAll(".cart");
   for (var i = 0; i < arr.length; i++) {
     const cost = arr[i].querySelector(".money");

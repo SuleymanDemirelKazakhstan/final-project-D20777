@@ -62,6 +62,30 @@ function f4(delivering) {
     time.classList.add("time");
     time.textContent = delivering.time;
     secondCart.appendChild(time);
+
+    let pay = document.createElement("p");
+    pay.textContent = delivering.pay;
+    pay.classList.add("pay");
+    secondCart.appendChild(pay);
+
+    let car = document.createElement("p");
+    car.textContent = delivering.car;
+    car.classList.add("car");
+    secondCart.appendChild(car);
+    let instagram = document.createElement("a");
+    instagram.innerHTML = "Instagram"+ "<br>";
+    instagram.href = delivering.instagram;
+    instagram.classList.add("instagram");
+    secondCart.appendChild(instagram);
+
+    let features = document.createElement("p");
+    features.textContent = delivering.features;
+    features.classList.add("features");
+    secondCart.appendChild(features);
+
+    
+
+
     if(delivering.site){
     let site = document.createElement("a");
     site.textContent = delivering.site;

@@ -1,4 +1,40 @@
-
+.adress, .pay, .car, .features, .instagram{
+	color:#f9f7cf;
+	font-size: 18pt;
+	margin-top: 10px;
+}
+/*.features, .food, .car{
+	margin-bottom: 10px;
+}*/
+a{
+	display: inline-block;
+}
+.instagram:hover::before{
+	color:#f9f7cf;
+}
+.instagram::before{
+	content:"Социальные сети:";
+	margin-right: 10px;
+	font-size: 20pt;
+}
+.instagram:hover{
+	color: #ffda77;
+}
+.pay::before{
+	content:"Оплата:";
+	margin-right: 10px;
+	font-size: 20pt;
+}
+.car::before{
+	content:"Парковка:";
+	margin-right: 10px;
+	font-size: 20pt;
+}
+.features::before{
+	content:"Особенности:";
+	margin-right: 10px;
+	font-size: 20pt;
+}
 .triangle-left {
     width: 0;
     height: 0;
@@ -6,7 +42,6 @@
     border-bottom: 60px solid transparent;
     border-right: 60px solid #ffda77;
 }
-
 .cart{
 	width: 500px;
 	border: 0px;
@@ -14,6 +49,10 @@
 .information{
 	padding: 0;
 }
+.information div{
+	margin-top: 80px;
+}
+
 .name{
 	margin-bottom: 10px ;
 }
@@ -21,7 +60,7 @@
 	margin-bottom: 10px ;
 }
 .img{
-	width: 500px;
+	width: 100%;
 	height: 300px;
 }
 
@@ -29,21 +68,86 @@
 	margin-left: 70px;
 }
 
-@media screen and (max-width: 400px){
-	.triangle-left {
-    border-top: 25px solid transparent;
-    border-bottom: 25px solid transparent;
-    border-right: 25px solid #ffda77;
-}
-.up{
-	height: 70px;
-}
-}
 @media screen and (max-width: 800px){
 	.triangle-left {
-    border-top: 40px solid transparent;
-    border-bottom: 40px solid transparent;
-    border-right: 40px solid #ffda77;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-right: 30px solid #ffda77;
 }
+.cart{
+	width: 300px;
+	margin: 0;
+	margin-top: 50px; 
+}
+.img{
+	height:200px; 
 
+}
+.car, .pay, .features, .instagram{
+		font-size: 14pt;
+		margin-top: 7px;
+	}
+	.car::before, .pay::before, .features::before, .instagram::before{
+		font-size: 14pt;
+	}
+	.food, .adress, .time, .site, .set, .money{
+		font-size: 14pt;
+		margin-top: 7px;
+	}
+	.food::before, .adress::before, .time::before, .site::before, .set::before, .money::before{
+		font-size: 14pt;
+	}
+	.information div {
+		margin-top: 105px;
+
+	}
+
+}
+@media screen and (max-width: 400px){
+	.triangle-left {
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #ffda77;
+}
+.cart{
+	width: 150px;
+	margin: 0;
+	margin-top: 15px; 
+
+}
+.img{
+	height:100px; 
+
+}
+   .car, .pay, .features, .instagram{
+		font-size: 10pt;
+		margin-top: 5px;
+	}
+	.car::before, .pay::before, .features::before, .instagram::before{
+		font-size: 10pt;
+	}
+	.food, .adress, .time, .site, .set, .money{
+		font-size: 10pt;
+		margin-top: 5px;
+	}
+	.food::before, .adress::before, .time::before, .site::before, .set::before, .money::before{
+		font-size: 10pt;
+	}
+	.name{
+			font-size: 18pt;
+			margin-top: 5px;
+		}
+		.information div {
+		margin-top: 60px;
+
+	}
+	.description{
+		line-height: 15px;
+	}
+	.categories{
+		width: 170px;
+	}
+	.information{
+		margin-left: 20px ;
+	}
 }

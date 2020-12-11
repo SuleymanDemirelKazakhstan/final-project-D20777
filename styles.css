@@ -13,7 +13,7 @@ html{
 header{
 	background-image: url("images/cupitor.jpg");
 	background-repeat:no-repeat; 
-	background-size: 100vw auto;
+	background-size: 100vw 100%;
 	color: white;
 	padding-bottom: 70px;
 }
@@ -371,6 +371,15 @@ button:hover{
 	.food::before, .adress::before, .time::before, .site::before, .set::before, .money::before{
 		font-size: 14pt;
 	}
+		.deleting{
+			width: 120px;
+			font-size: 12pt;
+			
+		}
+		.filt{
+			font-size: 14pt;
+		}
+}
 	@media screen and (max-width:400px){
 		.container{
 			max-width: 330px;
@@ -469,5 +478,17 @@ button:hover{
 		}
 		.set, .site{
 			margin-bottom: 10px;
+		}
+		.filt{
+			font-size: 8pt;
+		}
+		.information{
+			height: 200px;
+
+		}
+		.deleting{
+			width: 80px;
+			font-size: 8pt;
+			padding-left: 20px;
 		}
 }
