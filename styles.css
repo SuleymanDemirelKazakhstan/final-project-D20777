@@ -29,22 +29,19 @@ button{
 	height: 150px;
 	}
 
-
-nav{
+nav input{
 	text-transform: uppercase;
-}
-nav a{
+	background-color: transparent;
 	margin-left: 20px;
 	color: #f9f7cf;
 	font-weight: 800;
 	font-size: 13pt;
+	cursor: pointer;
 
 }
-nav a:hover{
+nav input:hover{
 	color: #ffda77 ;
 	border-bottom: dotted 5px #ffda77;
-	border-top: dotted 5px #ffda77;
-	/*padding-bottom: 3px;*/
 }
 .centre{
 	display: flex;

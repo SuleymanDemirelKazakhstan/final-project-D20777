@@ -139,12 +139,13 @@ fetch("http://localhost:3000/info/" + event.target.id).then(res => {
   })
 }
 
+
+let info = document.querySelector(".info");
 function f4(delivering,idType) {
   sector.innerHTML = "";
   information.innerHTML = "";
   information.style.display = "block";
   sector.style.display = "block";
-
   let price = document.createElement('div');
   price.classList.add("price");
   information.appendChild(price);
@@ -179,9 +180,10 @@ function f4(delivering,idType) {
     sector.appendChild(cart);
     cart.id = id++;
 
-
+    let d = document.createElement("div");
+    d.classList.add("delete");
+    cart.appendChild(d);
     let name = document.createElement("a");
-
     name.textContent = delivering[i].name;
     name.href = "elementPage.html?id="+idType+"&name=" + name.textContent;
     name.classList.add("name");
@@ -237,20 +239,22 @@ function f4(delivering,idType) {
     deleting.classList.add("deleting");
     deleting.addEventListener('click', del);
     deleting.id = idforDel++;
+    deleting.style.display = "none";
     }
-    // let add = document.createElement("p");
-    // add.textContent = "Добавить";
-    // sector.appendChild(add);
-    // add.classList.add("add");
   }
-  
+  let admin = document.querySelector(".admin");
+  admin.addEventListener('click', adm);
+
+  function adm(){
+    let but = document.querySelectorAll(".deleting");
+    for (var i = 0; i < but.length; i++) {
+      but[i].style.display = "block";
+    }
+  }
 function del(event){
-  let x = event.currentTarget.id;
-  console.log(event.currentTarget.id);
-  let carta = document.querySelector(".cart");
-  if(carta.id === x){
-    carta.remove();
-  }
+  const bt = event.currentTarget;
+  const cart = bt.parentNode;
+  cart.remove();
 }
 
 
