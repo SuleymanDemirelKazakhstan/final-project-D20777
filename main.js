@@ -46,7 +46,7 @@ function f3() {
   sector.style.display = "block";
   let aboutNew = document.createElement("p");
   aboutNew.classList.add("aboutNew");
-  aboutNew.textContent = newCafe.length +" новых ресторанов и кафе в Алматы, лето-осень 2020";
+  aboutNew.textContent = newCafe.length + " новых ресторанов и кафе в Алматы, лето-осень 2020";
   information.appendChild(aboutNew);
 
   let aboutNewCafe = document.createElement("p");
@@ -111,13 +111,14 @@ function f3() {
     set.classList.add("set");
     set.textContent = newCafe[i].sets;
     cart.appendChild(set);
-     let deleting = document.createElement("p");
+    let deleting = document.createElement("p");
     deleting.textContent = "Удалить";
     cart.appendChild(deleting);
     deleting.classList.add("deleting");
     deleting.addEventListener('click', del);
     deleting.id = idforDel++;
-    
+    deleting.style.display = "none";
+
   }
 }
 
@@ -127,21 +128,20 @@ for (var i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener('click', getData);
   buttons[i].id = "bt" + (i + 1);
 }
-function getData(event){
-  
-fetch("http://localhost:3000/info/" + event.target.id).then(res => {
-  res.json().then(data => {
+function getData(event) {
 
-    // console.log(event.target.id);
-    f4(data,event.target.id);
-    
-  })
+  fetch("http://localhost:3000/info/" + event.target.id).then(res => {
+    res.json().then(data => {
+      // sector.id = event.target.id; 
+      f4(data, event.target.id);
+
+    })
   })
 }
 
 
 let info = document.querySelector(".info");
-function f4(delivering,idType) {
+function f4(delivering, idType) {
   sector.innerHTML = "";
   information.innerHTML = "";
   information.style.display = "block";
@@ -177,15 +177,13 @@ function f4(delivering,idType) {
   for (let i = 0; i < delivering.length; i++) {
     let cart = document.createElement("div");
     cart.classList.add("cart");
+    cart.dataset.id = delivering[i]._id;
     sector.appendChild(cart);
     cart.id = id++;
 
-    let d = document.createElement("div");
-    d.classList.add("delete");
-    cart.appendChild(d);
     let name = document.createElement("a");
     name.textContent = delivering[i].name;
-    name.href = "elementPage.html?id="+idType+"&name=" + name.textContent;
+    name.href = "elementPage.html?id=" + idType + "&name=" + name.textContent;
     name.classList.add("name");
     cart.appendChild(name);
 
@@ -215,19 +213,19 @@ function f4(delivering,idType) {
     time.classList.add("time");
     time.textContent = delivering[i].time;
     cart.appendChild(time);
-    if(delivering[i].site){
-    let site = document.createElement("a");
-    site.textContent = delivering[i].site;
-    site.href = "http://"+delivering[i].site + "/";
-    site.classList.add("site");
-    cart.appendChild(site);
+    if (delivering[i].site) {
+      let site = document.createElement("a");
+      site.textContent = delivering[i].site;
+      site.href = "http://" + delivering[i].site + "/";
+      site.classList.add("site");
+      cart.appendChild(site);
     }
-    else{
+    else {
       let money = document.createElement("p");
       money.classList.add("money");
       money.textContent = delivering[i].money;
       cart.appendChild(money);
-  
+
       let set = document.createElement("p");
       set.classList.add("set");
       set.textContent = delivering[i].sets;
@@ -240,33 +238,35 @@ function f4(delivering,idType) {
     deleting.addEventListener('click', del);
     deleting.id = idforDel++;
     deleting.style.display = "none";
-    }
   }
-  let admin = document.querySelector(".admin");
-  admin.addEventListener('click', adm);
+}
+let admin = document.querySelector(".admin");
+admin.addEventListener('click', adm);
 
-  function adm(){
-    let but = document.querySelectorAll(".deleting");
-    for (var i = 0; i < but.length; i++) {
-      but[i].style.display = "block";
-    }
+function adm() {
+  let but = document.querySelectorAll(".deleting");
+  for (var i = 0; i < but.length; i++) {
+    but[i].style.display = "block";
   }
-function del(event){
+}
+
+function del(event) {
   const bt = event.currentTarget;
   const cart = bt.parentNode;
+  // fetch("/delete/" + sector.id +"/" + cart.dataset.id);
   cart.remove();
 }
 
 
-function filtering(event){
+function filtering(event) {
 
   const arr = document.querySelectorAll(".cart");
   for (var i = 0; i < arr.length; i++) {
     const cost = arr[i].querySelector(".money");
-    if(!cost || cost.textContent === event.currentTarget.innerHTML ){
+    if (!cost || cost.textContent === event.currentTarget.innerHTML) {
       arr[i].style.display = "flex";
     }
-    else{
+    else {
       arr[i].style.display = "none";
     }
   }
@@ -276,13 +276,13 @@ function filtering(event){
 let contacts = document.querySelector(".contact");
 contacts.addEventListener('click', contact);
 
-function contact(){
+function contact() {
   sector.innerHTML = "";
   information.innerHTML = "";
   information.style.display = "block";
   sector.style.display = "none";
   let text = document.createElement("p");
-  text.innerHTML =  "Вы знаете хорошие заведения в городе Алматы? Тогда вы можете поделиться с информацией с нами, написав нам на почту. Или позвонив нам по данному номеру"+ "<br>" + "Контактный номер: +7 756 365 70 21" + "<br>" + "Mail: cupitor@gmail.com";
+  text.innerHTML = "Вы знаете хорошие заведения в городе Алматы? Тогда вы можете поделиться с информацией с нами, написав нам на почту. Или позвонив нам по данному номеру" + "<br>" + "Контактный номер: +7 756 365 70 21" + "<br>" + "Mail: cupitor@gmail.com";
   text.classList.add("inf");
   information.appendChild(text);
   let logo = document.createElement("img");

@@ -96,9 +96,29 @@ app.get('/info/:id/:name', function (req, res) {
         function (err, db) {
             if (err) throw err;
             var dbo = db.db("mydb");
-            dbo.collection(req.params['id']).find({name:req.params["name"]}).toArray(function (err, result) {
+            dbo.collection(req.params['id']).find({ name: req.params["name"] }).toArray(function (err, result) {
                 res.send(JSON.stringify(result));
             });
         });
 })
+// app.get('/delete/:id/:name', function (req, res) {
+//     MongoClient.connect(url,
+//         {
+//             useUnifiedTopology: true,
+//             useNewUrlParser: true
+//         },
+//         function (err, db) {
+//             if (err) throw err;
+//             var dbo = db.db("mydb");
+//             var myquery = {_id:req.params["name"]};
+//               dbo.collection(req.params["id"]).deleteOne(myquery, function(err, obj) {
+//                 if (err) throw err;
+//                 console.log(obj);
+//                 console.log("1 document deleted");
+//                 db.close();
+
+//               });
+
+//         });
+// })
 app.listen(3000);

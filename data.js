@@ -22,9 +22,9 @@ MongoClient.connect(url,
         time: "пн-чт 12:00–02:00; пт-сб 12:00–04:00; вс 12:00–02:00",
         money: "10000-15000 тг",
         sets: "240",
-        pay:"Наличные, Оплата картой",
-        car:"Неохраняемая бесплатная",
-        features:"Караоке, Фоновая музыка, Живая музыка, DJ, Шоу-программа"
+        pay: "Наличные, Оплата картой",
+        car: "Неохраняемая бесплатная",
+        features: "Караоке, Фоновая музыка, Живая музыка, DJ, Шоу-программа"
 
       },
       {
@@ -38,9 +38,9 @@ MongoClient.connect(url,
         time: "пн-вс 12:00–01:00",
         money: "3000-4500",
         sets: "40",
-        pay:"Наличные, Оплата картой",
-        car:"Городская",
-        features:"Есть летняя терасса"
+        pay: "Наличные, Оплата картой",
+        car: "Городская",
+        features: "Есть летняя терасса"
       },
       {
         instagram: "https://www.instagram.com/cocos_restobar/",
@@ -53,9 +53,9 @@ MongoClient.connect(url,
         time: "пн-вс 12:00–23:00",
         money: "4500-7000 тг",
         sets: "50",
-        pay:"Наличные, Оплата картой",
-        car:"Неохраняемая бесплатная",
-        features:"WiFi, Винная карта, VIP-зал"
+        pay: "Наличные, Оплата картой",
+        car: "Неохраняемая бесплатная",
+        features: "WiFi, Винная карта, VIP-зал"
       }
     ];
 
@@ -73,9 +73,9 @@ MongoClient.connect(url,
       adress: "г. Алматы, по всему городу",
       time: "круглосуточно, без выходных",
       site: "www.kfc-kazakhstan.kz",
-      pay:"Наличные, Оплата картой",
-      car:"Неохраняемая бесплатная",
-      features:"На вынос, Детское меню"
+      pay: "Наличные, Оплата картой",
+      car: "Неохраняемая бесплатная",
+      features: "На вынос, Детское меню"
     },
     {
       instagram: "https://www.instagram.com/basilic_kz/",
@@ -87,9 +87,9 @@ MongoClient.connect(url,
       adress: "г. Алматы, пр. ​Суюнбая, 15 (ниже пр. Райымбека)",
       time: "круглосуточно, без выходных",
       site: "basilic.kz",
-      pay:"Наличные, Оплата картой",
-      car:"Неохраняемая бесплатная",
-      features:"Есть доставка, Бизнес-ланч, Завтраки"
+      pay: "Наличные, Оплата картой",
+      car: "Неохраняемая бесплатная",
+      features: "Есть доставка, Бизнес-ланч, Завтраки"
     },
     {
       instagram: "https://www.instagram.com/mcdonalds.kaz/",
@@ -101,9 +101,9 @@ MongoClient.connect(url,
       adress: "г. Алматы, по всему городу",
       time: "пн-вс 09:00–22:00",
       site: "mcdonalds.kz",
-      pay:"Наличные, Оплата картой",
-      car:"Неохраняемая бесплатная",
-      features:"Есть доставка"
+      pay: "Наличные, Оплата картой",
+      car: "Неохраняемая бесплатная",
+      features: "Есть доставка"
     }
 
     ];
@@ -122,9 +122,9 @@ MongoClient.connect(url,
         time: "пн-вс 10:00–02:00",
         money: "7000-10000 тг",
         sets: "50",
-        pay:"Наличные, Оплата картой",
-        car:"Неохраняемая бесплатная",
-        features:"WiFi, Бизнес-ланч, Фоновая музыка, Живая музыка, Танцпол, VIP-зал, Детская площадка, Есть летняя терасса, Фонтан, Кейтеринг, Есть доставка"
+        pay: "Наличные, Оплата картой",
+        car: "Неохраняемая бесплатная",
+        features: "WiFi, Бизнес-ланч, Фоновая музыка, Живая музыка, Танцпол, VIP-зал, Детская площадка, Есть летняя терасса, Фонтан, Кейтеринг, Есть доставка"
       },
       {
         instagram: "https://instagram.com/narsharab.resto/",
@@ -137,9 +137,9 @@ MongoClient.connect(url,
         time: "пн-вс 12:00–22:00",
         money: "3000-4500 тг",
         sets: "50",
-        pay:"Наличные, Оплата картой",
-        car:"Городская",
-        features:"Есть доставка"
+        pay: "Наличные, Оплата картой",
+        car: "Городская",
+        features: "Есть доставка"
       },
       {
         instagram: "https://instagram.com/shashlikoff_almaty/",
@@ -152,9 +152,9 @@ MongoClient.connect(url,
         time: "пн-чт 11:00–02:00; пт-сб 11:00–03:00; вс 11:00–02:00",
         money: "3000-4500 тг",
         sets: "50",
-        pay:"Наличные, Оплата картой",
-        car:"Городская",
-        features:"Бизнес-ланч, Есть летняя терасса"
+        pay: "Наличные, Оплата картой",
+        car: "Городская",
+        features: "Бизнес-ланч, Есть летняя терасса"
       }
     ];
     restorans.forEach(el => {
@@ -172,9 +172,9 @@ MongoClient.connect(url,
         time: "пн-вс 09:00–00:00",
         money: "3000-4500 тг",
         sets: "50",
-        pay:"Наличные, Оплата картой",
-        car:"Городская",
-        features:"Завтраки, Кальян"
+        pay: "Наличные, Оплата картой",
+        car: "Городская",
+        features: "Завтраки, Кальян"
       },
       {
         instagram: "https://instagram.com/asianbbq/",
@@ -187,9 +187,9 @@ MongoClient.connect(url,
         time: "круглосуточно",
         money: "1500-3000 тг",
         sets: "70",
-        pay:"Наличные, Оплата картой",
-        car:"Неохраняемая бесплатная",
-        features:"WiFi, На вынос, Детский уголок, ТВ-экран, Есть доставка"
+        pay: "Наличные, Оплата картой",
+        car: "Неохраняемая бесплатная",
+        features: "WiFi, На вынос, Детский уголок, ТВ-экран, Есть доставка"
       },
       {
         instagram: "https://www.instagram.com/pizzaleoncafe/",
@@ -202,9 +202,9 @@ MongoClient.connect(url,
         time: "круглосуточно, без выходных",
         money: "1500-3000 тг",
         sets: "15",
-        pay:"Наличные, Оплата картой",
-        car:"Неохраняемая бесплатная",
-        features:"Есть летняя терасса"
+        pay: "Наличные, Оплата картой",
+        car: "Неохраняемая бесплатная",
+        features: "Есть летняя терасса"
       }
     ];
     cafe.forEach(el => {
@@ -223,9 +223,9 @@ MongoClient.connect(url,
         time: "пн-вс 12:00–00:00",
         money: "4500-7000 тг",
         sets: "350",
-        pay:"Наличные, Оплата картой",
-        car:"Городская",
-        features:"Живая музыка, Фоновая музыка, Танцпол, Есть летняя терасса"
+        pay: "Наличные, Оплата картой",
+        car: "Городская",
+        features: "Живая музыка, Фоновая музыка, Танцпол, Есть летняя терасса"
       },
       {
         instagram: "https://www.instagram.com/overpack_lounge_bar/",
@@ -238,9 +238,9 @@ MongoClient.connect(url,
         time: "пн-вс 11:00–22:00",
         money: "3000-4500 тг",
         sets: "70",
-        pay:"Наличные, Оплата картой",
-        car:"Городская",
-        features:"Кальян"
+        pay: "Наличные, Оплата картой",
+        car: "Городская",
+        features: "Кальян"
       },
       {
         instagram: "https://instagram.com/myata_food_ayezova/",
@@ -253,9 +253,9 @@ MongoClient.connect(url,
         time: "пн-вс 12:00–23:00",
         money: "3000-4500 тг",
         sets: "50",
-        pay:"Наличные, Оплата картой",
-        car:"Городская",
-        features:"Кальян, Есть летняя терасса"
+        pay: "Наличные, Оплата картой",
+        car: "Городская",
+        features: "Кальян, Есть летняя терасса"
       }
     ];
     pabs.forEach(el => {
@@ -273,9 +273,9 @@ MongoClient.connect(url,
         adress: "г. Алматы, ​пр. Абая, 44а (ТЦ Promenade)",
         time: "пн-вс 10:00–00:00",
         site: "blackstarburger.ru",
-        pay:"Наличные, Оплата картой",
-        car:"Городская",
-        features:"Кальян, Есть летняя терасса"
+        pay: "Наличные, Оплата картой",
+        car: "Городская",
+        features: "Кальян, Есть летняя терасса"
       },
       {
         instagram: "https://instagram.com/6inch.kazakhstan/",
@@ -288,9 +288,9 @@ MongoClient.connect(url,
         time: "пн-вс 10:00-21:00",
         money: "1500-3000 тг",
         sets: "на вынос",
-        pay:"Наличные, Оплата картой",
-        car:"Городская",
-        features:"Собери сам свой сэндвич"
+        pay: "Наличные, Оплата картой",
+        car: "Городская",
+        features: "Собери сам свой сэндвич"
       },
       {
         instagram: "https://instagram.com/box.lagman/",
@@ -303,9 +303,9 @@ MongoClient.connect(url,
         time: "пн-вс 11:00–22:00",
         money: "700-1500 тг",
         sets: "на вынос",
-        pay:"Наличные, Оплата картой",
-        car:"Городская",
-        features:"На вынос"
+        pay: "Наличные, Оплата картой",
+        car: "Городская",
+        features: "На вынос"
       }
     ];
     fastfood.forEach(el => {
@@ -324,9 +324,9 @@ MongoClient.connect(url,
         time: "пн-вс 08:00–23:00",
         money: "1500-3000 тг",
         sets: "12",
-        pay:"Наличные, Оплата картой",
-        car:"Городская",
-        features:"Есть летняя терасса, На вынос"
+        pay: "Наличные, Оплата картой",
+        car: "Городская",
+        features: "Есть летняя терасса, На вынос"
       },
       {
         instagram: "https://www.instagram.com/utepia_kz/",
@@ -339,9 +339,9 @@ MongoClient.connect(url,
         time: "пн-вс 09:00–20:00",
         money: "700-1500 тг",
         sets: "на вынос",
-        pay:"Наличные, Оплата картой",
-        car:"Городская",
-        features:"Есть летняя терасса"
+        pay: "Наличные, Оплата картой",
+        car: "Городская",
+        features: "Есть летняя терасса"
       },
       {
         instagram: "https://instagram.com/bestbrew_coffee/",
@@ -354,9 +354,9 @@ MongoClient.connect(url,
         time: "пн-вс 08:00–22:00",
         money: "1500-3000 тг",
         sets: "12",
-        pay:"Наличные, Оплата картой",
-        car:"Городская",
-        features:"Есть летняя терасса"
+        pay: "Наличные, Оплата картой",
+        car: "Городская",
+        features: "Есть летняя терасса"
       }
     ];
     coffeine.forEach(el => {
@@ -375,9 +375,9 @@ MongoClient.connect(url,
         time: "пн-вс 10:00–21:00",
         money: "3000-4500 тг",
         sets: "50",
-        pay:"Наличные, Оплата картой",
-        car:"Неохраняемая бесплатная",
-        features:"Топчаны, Бассейн, Есть летняя терасса"
+        pay: "Наличные, Оплата картой",
+        car: "Неохраняемая бесплатная",
+        features: "Топчаны, Бассейн, Есть летняя терасса"
       },
       {
         instagram: "https://www.instagram.com/lemon_studio_almaty/",
@@ -390,9 +390,9 @@ MongoClient.connect(url,
         time: "пн выходной; вт-вс 10:00–23:00",
         money: "3000-4500 тг",
         sets: "50",
-        pay:"Наличные, Оплата картой",
-        car:"Городская",
-        features:"WiFi"
+        pay: "Наличные, Оплата картой",
+        car: "Городская",
+        features: "WiFi"
       },
       {
         instagram: "https://instagram.com/aspanpark_kz/",
@@ -405,9 +405,9 @@ MongoClient.connect(url,
         time: "пн-вс 10:00–22:00",
         money: "3000-4500 тг",
         sets: "40",
-        pay:"Наличные, Оплата картой",
-        car:"Охраняемая бесплатная",
-        features:"Детская площадка, Детский уголок, Детские стульчики, Детское меню, Аниматоры"
+        pay: "Наличные, Оплата картой",
+        car: "Охраняемая бесплатная",
+        features: "Детская площадка, Детский уголок, Детские стульчики, Детское меню, Аниматоры"
       }
     ];
     center.forEach(el => {
@@ -425,9 +425,9 @@ MongoClient.connect(url,
         time: "пт-сб 22:00–06:00",
         money: "4500-7000 тг",
         sets: "100",
-        pay:"Наличные, Оплата картой",
-        car:"Неохраняемая бесплатная",
-        features:"DJ, Танцпол, Шоу-программа, GO-GO"
+        pay: "Наличные, Оплата картой",
+        car: "Неохраняемая бесплатная",
+        features: "DJ, Танцпол, Шоу-программа, GO-GO"
       },
       {
         instagram: "https://www.instagram.com/motor_club_almaty/",
@@ -440,9 +440,9 @@ MongoClient.connect(url,
         time: "пн 18:00–03:00; вт выходной; ср 18:00–03:00; чт 20:00–04:00; пт-сб 21:00–06:00; вс 18:00–03:00",
         money: "4500-7000 тг",
         sets: "100",
-        pay:"Наличные, Оплата картой",
-        car:"Охраняемая бесплатная",
-        features:"Фоновая музыка, Живая музыка, Танцпол, Караоке, Кальян, Шоу-программа, GO-GO, Стриптиз, Своя парковка"
+        pay: "Наличные, Оплата картой",
+        car: "Охраняемая бесплатная",
+        features: "Фоновая музыка, Живая музыка, Танцпол, Караоке, Кальян, Шоу-программа, GO-GO, Стриптиз, Своя парковка"
       },
       {
         instagram: "https://www.instagram.com/fizika_almaty/",
@@ -455,9 +455,9 @@ MongoClient.connect(url,
         time: "пн выходной; вт-чт 18:00–01:00; пт-сб 18:00–05:00; вс выходной",
         money: "4500-7000 тг",
         sets: "200",
-        pay:"Наличные, Оплата картой",
-        car:"Городская",
-        features:"DJ, Живая музыка, Танцпол, Крафтовое пиво, VIP-зал"
+        pay: "Наличные, Оплата картой",
+        car: "Городская",
+        features: "DJ, Живая музыка, Танцпол, Крафтовое пиво, VIP-зал"
       }
     ];
     clubs.forEach(el => {
@@ -475,9 +475,9 @@ MongoClient.connect(url,
         time: "пн-вс 10:00–00:00",
         money: "1500-3000 тг",
         sets: "45",
-        pay:"Наличные",
-        car:"Городская",
-        features:"Есть летняя терасса"
+        pay: "Наличные",
+        car: "Городская",
+        features: "Есть летняя терасса"
       },
       {
         instagram: "https://www.instagram.com/baoalmaty/",
@@ -490,9 +490,9 @@ MongoClient.connect(url,
         time: "пн-вс 12:00–22:00",
         money: "1500-3000 тг",
         sets: "20",
-        pay:"Наличные, Оплата картой",
-        car:"Охраняемая бесплатная",
-        features:"На вынос"
+        pay: "Наличные, Оплата картой",
+        car: "Охраняемая бесплатная",
+        features: "На вынос"
       },
       {
         instagram: "https://www.instagram.com/yasudasushi/",
@@ -505,9 +505,9 @@ MongoClient.connect(url,
         time: "пн-вс 12:00–00:00",
         money: "3000-4500 тг",
         sets: "20",
-        pay:"Наличные, Оплата картой",
-        car:"Городская",
-        features:"Открытая кухня"
+        pay: "Наличные, Оплата картой",
+        car: "Городская",
+        features: "Открытая кухня"
       }
     ];
     sushi.forEach(el => {
@@ -525,11 +525,11 @@ MongoClient.connect(url,
         time: "пн-вс 18:00–06:00",
         money: "3000-4500 тг",
         sets: "70",
-        pay:"Наличные, Оплата картой",
-        car:"Неохраняемая бесплатная",
-        features:"WiFi, Караоке"
+        pay: "Наличные, Оплата картой",
+        car: "Неохраняемая бесплатная",
+        features: "WiFi, Караоке"
       },
-        {
+      {
         instagram: "https://www.instagram.com/wallstreetalmaty/",
         adress_url: "https://yandex.kz/maps/162/almaty/?ll=76.878505%2C43.243855&mode=search&sll=76.878774%2C43.243882&text=43.243882%2C76.878774&z=16",
         name: "Wall Street",
@@ -540,11 +540,11 @@ MongoClient.connect(url,
         time: "пн-вс 18:00–06:00",
         money: "3000-4500 тг",
         sets: "70",
-        pay:"Наличные, Оплата картой",
-        car:"Неохраняемая бесплатная",
-        features:"WiFi, Караоке"
+        pay: "Наличные, Оплата картой",
+        car: "Неохраняемая бесплатная",
+        features: "WiFi, Караоке"
       },
-       {
+      {
         instagram: "https://www.instagram.com/wallstreetalmaty/",
         adress_url: "https://yandex.kz/maps/162/almaty/?ll=76.878505%2C43.243855&mode=search&sll=76.878774%2C43.243882&text=43.243882%2C76.878774&z=16",
         name: "Wall Street",
@@ -555,15 +555,15 @@ MongoClient.connect(url,
         time: "пн-вс 18:00–06:00",
         money: "3000-4500 тг",
         sets: "70",
-        pay:"Наличные, Оплата картой",
-        car:"Неохраняемая бесплатная",
-        features:"WiFi, Караоке"
+        pay: "Наличные, Оплата картой",
+        car: "Неохраняемая бесплатная",
+        features: "WiFi, Караоке"
       }
     ];
     karaoke.forEach(el => {
       dbo.collection("bt10").insert(el);
     })
-     let pizza = [
+    let pizza = [
       {
         instagram: "https://www.instagram.com/partyfood.almaty/",
         adress_url: "https://yandex.kz/maps/162/almaty/?ll=76.895725%2C43.213606&mode=search&sll=76.895683%2C43.213606&text=43.213606%2C76.895683&z=16",
@@ -575,11 +575,11 @@ MongoClient.connect(url,
         time: "пн-вс 09:00–23:00",
         money: "1500-3000 тг",
         sets: "30",
-        pay:"Наличные, Оплата картой",
-        car:"Неохраняемая бесплатная",
-        features:"Есть доставка, На вынос"
+        pay: "Наличные, Оплата картой",
+        car: "Неохраняемая бесплатная",
+        features: "Есть доставка, На вынос"
       },
-        {
+      {
         instagram: "https://www.instagram.com/partyfood.almaty/",
         adress_url: "https://yandex.kz/maps/162/almaty/?ll=76.895725%2C43.213606&mode=search&sll=76.895683%2C43.213606&text=43.213606%2C76.895683&z=16",
         name: "Party Food",
@@ -590,11 +590,11 @@ MongoClient.connect(url,
         time: "пн-вс 09:00–23:00",
         money: "1500-3000 тг",
         sets: "30",
-        pay:"Наличные, Оплата картой",
-        car:"Неохраняемая бесплатная",
-        features:"Есть доставка, На вынос"
+        pay: "Наличные, Оплата картой",
+        car: "Неохраняемая бесплатная",
+        features: "Есть доставка, На вынос"
       },
-        {
+      {
         instagram: "https://www.instagram.com/partyfood.almaty/",
         adress_url: "https://yandex.kz/maps/162/almaty/?ll=76.895725%2C43.213606&mode=search&sll=76.895683%2C43.213606&text=43.213606%2C76.895683&z=16",
         name: "Party Food",
@@ -605,107 +605,107 @@ MongoClient.connect(url,
         time: "пн-вс 09:00–23:00",
         money: "1500-3000 тг",
         sets: "30",
-        pay:"Наличные, Оплата картой",
-        car:"Неохраняемая бесплатная",
-        features:"Есть доставка, На вынос"
+        pay: "Наличные, Оплата картой",
+        car: "Неохраняемая бесплатная",
+        features: "Есть доставка, На вынос"
       }
     ];
     pizza.forEach(el => {
       dbo.collection("bt11").insert(el);
     })
-     let stolov = [
-       {
-      instagram: "https://www.instagram.com/basilic_kz/",
-      adress_url: "https://yandex.kz/maps/162/almaty/house/Y08YfwJgQEwHQFppfX52c3RjbQ==/?ll=76.950989%2C43.272810&z=16",
-      name: "Basilic на Суюнбая",
-      description: "На Территории вкусной еды для вас представлены блюда кухонь мира. Наше меню формируется по-сезонно с использованием сезонных продуктов.",
-      img_url: "delivery/basilic.jpg",
-      food: "Восточная, Европейская",
-      adress: "г. Алматы, пр. ​Суюнбая, 15 (ниже пр. Райымбека)",
-      time: "круглосуточно, без выходных",
-      site: "basilic.kz",
-      pay:"Наличные, Оплата картой",
-      car:"Неохраняемая бесплатная",
-      features:"Есть доставка, Бизнес-ланч, Завтраки"
-    },
-         {
-      instagram: "https://www.instagram.com/basilic_kz/",
-      adress_url: "https://yandex.kz/maps/162/almaty/house/Y08YfwJgQEwHQFppfX52c3RjbQ==/?ll=76.950989%2C43.272810&z=16",
-      name: "Basilic на Суюнбая",
-      description: "На Территории вкусной еды для вас представлены блюда кухонь мира. Наше меню формируется по-сезонно с использованием сезонных продуктов.",
-      img_url: "delivery/basilic.jpg",
-      food: "Восточная, Европейская",
-      adress: "г. Алматы, пр. ​Суюнбая, 15 (ниже пр. Райымбека)",
-      time: "круглосуточно, без выходных",
-      site: "basilic.kz",
-      pay:"Наличные, Оплата картой",
-      car:"Неохраняемая бесплатная",
-      features:"Есть доставка, Бизнес-ланч, Завтраки"
-    },
-       {
-      instagram: "https://www.instagram.com/basilic_kz/",
-      adress_url: "https://yandex.kz/maps/162/almaty/house/Y08YfwJgQEwHQFppfX52c3RjbQ==/?ll=76.950989%2C43.272810&z=16",
-      name: "Basilic на Суюнбая",
-      description: "На Территории вкусной еды для вас представлены блюда кухонь мира. Наше меню формируется по-сезонно с использованием сезонных продуктов.",
-      img_url: "delivery/basilic.jpg",
-      food: "Восточная, Европейская",
-      adress: "г. Алматы, пр. ​Суюнбая, 15 (ниже пр. Райымбека)",
-      time: "круглосуточно, без выходных",
-      site: "basilic.kz",
-      pay:"Наличные, Оплата картой",
-      car:"Неохраняемая бесплатная",
-      features:"Есть доставка, Бизнес-ланч, Завтраки"
-    }
+    let stolov = [
+      {
+        instagram: "https://www.instagram.com/basilic_kz/",
+        adress_url: "https://yandex.kz/maps/162/almaty/house/Y08YfwJgQEwHQFppfX52c3RjbQ==/?ll=76.950989%2C43.272810&z=16",
+        name: "Basilic на Суюнбая",
+        description: "На Территории вкусной еды для вас представлены блюда кухонь мира. Наше меню формируется по-сезонно с использованием сезонных продуктов.",
+        img_url: "delivery/basilic.jpg",
+        food: "Восточная, Европейская",
+        adress: "г. Алматы, пр. ​Суюнбая, 15 (ниже пр. Райымбека)",
+        time: "круглосуточно, без выходных",
+        site: "basilic.kz",
+        pay: "Наличные, Оплата картой",
+        car: "Неохраняемая бесплатная",
+        features: "Есть доставка, Бизнес-ланч, Завтраки"
+      },
+      {
+        instagram: "https://www.instagram.com/basilic_kz/",
+        adress_url: "https://yandex.kz/maps/162/almaty/house/Y08YfwJgQEwHQFppfX52c3RjbQ==/?ll=76.950989%2C43.272810&z=16",
+        name: "Basilic на Суюнбая",
+        description: "На Территории вкусной еды для вас представлены блюда кухонь мира. Наше меню формируется по-сезонно с использованием сезонных продуктов.",
+        img_url: "delivery/basilic.jpg",
+        food: "Восточная, Европейская",
+        adress: "г. Алматы, пр. ​Суюнбая, 15 (ниже пр. Райымбека)",
+        time: "круглосуточно, без выходных",
+        site: "basilic.kz",
+        pay: "Наличные, Оплата картой",
+        car: "Неохраняемая бесплатная",
+        features: "Есть доставка, Бизнес-ланч, Завтраки"
+      },
+      {
+        instagram: "https://www.instagram.com/basilic_kz/",
+        adress_url: "https://yandex.kz/maps/162/almaty/house/Y08YfwJgQEwHQFppfX52c3RjbQ==/?ll=76.950989%2C43.272810&z=16",
+        name: "Basilic на Суюнбая",
+        description: "На Территории вкусной еды для вас представлены блюда кухонь мира. Наше меню формируется по-сезонно с использованием сезонных продуктов.",
+        img_url: "delivery/basilic.jpg",
+        food: "Восточная, Европейская",
+        adress: "г. Алматы, пр. ​Суюнбая, 15 (ниже пр. Райымбека)",
+        time: "круглосуточно, без выходных",
+        site: "basilic.kz",
+        pay: "Наличные, Оплата картой",
+        car: "Неохраняемая бесплатная",
+        features: "Есть доставка, Бизнес-ланч, Завтраки"
+      }
     ];
     stolov.forEach(el => {
       dbo.collection("bt12").insert(el);
     })
     let meat = [
-       {
-      instagram: "https://www.instagram.com/gg_steak/",
-      adress_url: "https://yandex.kz/maps/162/almaty/house/Y08YfwJhSkIBQFppfX5wdnpqbQ==/?ll=76.951376%2C43.217700&z=16",
-      name: "GG Steak House",
-      description: "Семейный ресторан в Горном Гиганте. Уютный интерьер GG STEAK HOUSE располагает к неторопливой приятной беседе.",
-      img_url: "meat/meat.jpg",
-      food: "Американская, Европейская",
-      adress: "г. Алматы, мкрн. Горный Гигант, ул. Искендерова, 58",
-      time: "пн-вс 10:00–00:00",
-      money: "3000-4500 тг",
-      sets: "100",
-      pay:"Наличные, Оплата картой",
-      car:"Неохраняемая бесплатная",
-      features:"WiFi, Бизнес-ланч"
-    },
       {
-      instagram: "https://www.instagram.com/gg_steak/",
-      adress_url: "https://yandex.kz/maps/162/almaty/house/Y08YfwJhSkIBQFppfX5wdnpqbQ==/?ll=76.951376%2C43.217700&z=16",
-      name: "GG Steak House",
-      description: "Семейный ресторан в Горном Гиганте. Уютный интерьер GG STEAK HOUSE располагает к неторопливой приятной беседе.",
-      img_url: "meat/meat.jpg",
-      food: "Американская, Европейская",
-      adress: "г. Алматы, мкрн. Горный Гигант, ул. Искендерова, 58",
-      time: "пн-вс 10:00–00:00",
-      money: "3000-4500 тг",
-      sets: "100",
-      pay:"Наличные, Оплата картой",
-      car:"Неохраняемая бесплатная",
-      features:"WiFi, Бизнес-ланч"
-    },
+        instagram: "https://www.instagram.com/gg_steak/",
+        adress_url: "https://yandex.kz/maps/162/almaty/house/Y08YfwJhSkIBQFppfX5wdnpqbQ==/?ll=76.951376%2C43.217700&z=16",
+        name: "GG Steak House",
+        description: "Семейный ресторан в Горном Гиганте. Уютный интерьер GG STEAK HOUSE располагает к неторопливой приятной беседе.",
+        img_url: "meat/meat.jpg",
+        food: "Американская, Европейская",
+        adress: "г. Алматы, мкрн. Горный Гигант, ул. Искендерова, 58",
+        time: "пн-вс 10:00–00:00",
+        money: "3000-4500 тг",
+        sets: "100",
+        pay: "Наличные, Оплата картой",
+        car: "Неохраняемая бесплатная",
+        features: "WiFi, Бизнес-ланч"
+      },
       {
-      instagram: "https://www.instagram.com/gg_steak/",
-      adress_url: "https://yandex.kz/maps/162/almaty/house/Y08YfwJhSkIBQFppfX5wdnpqbQ==/?ll=76.951376%2C43.217700&z=16",
-      name: "GG Steak House",
-      description: "Семейный ресторан в Горном Гиганте. Уютный интерьер GG STEAK HOUSE располагает к неторопливой приятной беседе.",
-      img_url: "meat/meat.jpg",
-      food: "Американская, Европейская",
-      adress: "г. Алматы, мкрн. Горный Гигант, ул. Искендерова, 58",
-      time: "пн-вс 10:00–00:00",
-      money: "3000-4500 тг",
-      sets: "100",
-      pay:"Наличные, Оплата картой",
-      car:"Неохраняемая бесплатная",
-      features:"WiFi, Бизнес-ланч"
-    }
+        instagram: "https://www.instagram.com/gg_steak/",
+        adress_url: "https://yandex.kz/maps/162/almaty/house/Y08YfwJhSkIBQFppfX5wdnpqbQ==/?ll=76.951376%2C43.217700&z=16",
+        name: "GG Steak House",
+        description: "Семейный ресторан в Горном Гиганте. Уютный интерьер GG STEAK HOUSE располагает к неторопливой приятной беседе.",
+        img_url: "meat/meat.jpg",
+        food: "Американская, Европейская",
+        adress: "г. Алматы, мкрн. Горный Гигант, ул. Искендерова, 58",
+        time: "пн-вс 10:00–00:00",
+        money: "3000-4500 тг",
+        sets: "100",
+        pay: "Наличные, Оплата картой",
+        car: "Неохраняемая бесплатная",
+        features: "WiFi, Бизнес-ланч"
+      },
+      {
+        instagram: "https://www.instagram.com/gg_steak/",
+        adress_url: "https://yandex.kz/maps/162/almaty/house/Y08YfwJhSkIBQFppfX5wdnpqbQ==/?ll=76.951376%2C43.217700&z=16",
+        name: "GG Steak House",
+        description: "Семейный ресторан в Горном Гиганте. Уютный интерьер GG STEAK HOUSE располагает к неторопливой приятной беседе.",
+        img_url: "meat/meat.jpg",
+        food: "Американская, Европейская",
+        adress: "г. Алматы, мкрн. Горный Гигант, ул. Искендерова, 58",
+        time: "пн-вс 10:00–00:00",
+        money: "3000-4500 тг",
+        sets: "100",
+        pay: "Наличные, Оплата картой",
+        car: "Неохраняемая бесплатная",
+        features: "WiFi, Бизнес-ланч"
+      }
     ];
     meat.forEach(el => {
       dbo.collection("bt13").insert(el);
