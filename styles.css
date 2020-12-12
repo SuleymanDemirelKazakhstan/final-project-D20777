@@ -291,7 +291,7 @@ button:hover{
 	.creative{
 		font-size: 30pt;	
 	}
-	nav a{
+	nav input{
 		font-size: 12pt;
 		margin-left:8px ;
 	}
@@ -388,7 +388,7 @@ button:hover{
 		.creative{
 			font-size: 16pt;	
 		}
-		nav a{
+		nav input{
 			font-size: 6pt;
 			margin-left:4px ;
 		}
